@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.Role" table="roles">
+        <id name="roleID" type="java.lang.Integer">
+            <column name="RoleID" length="11" />
+            <generator class="native"/>
+        </id>     
+        <property name="roleName" type="string">
+            <column name="RoleName" length="255" not-null="true" />
+        </property>
+           <property name="active" type="java.lang.Byte">
+            <column name="Active" length="1" not-null="true" />
+        </property>   
+          <property name="createdBy" type="string">
+            <column name="CreatedBy" length="255"/>
+        </property>
+          <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>
+          <property name="updatedBy" type="string">
+            <column name="UpdatedBy" length="255"/>
+        </property>
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>           
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,503 @@
+<div class="page-content-wrapper">
+		<div class="page-content">
+			
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+			Order<small>- Quick Pay</small>
+			</h3>
+			
+			<!-- END PAGE HEADER-->
+		<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portlet box blue" id="form_wizard_1">
+						<div class="portlet-title">
+							<div class="caption">
+								 Pay for your inmate number
+							</div>
+							
+						</div>
+						<div class="portlet-body form">
+							<form action="#" class="form-horizontal" id="submit_form" method="POST">
+								<div class="form-wizard">
+									<div class="form-body">
+										<ul class="nav nav-pills nav-justified steps" id="myMenuList">
+											<li>
+												<a href="#tab1" data-toggle="tab" class="step">
+												<span class="number">
+												1 </span>
+												<span class="desc">
+												 Search for Inmate Number </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab2" data-toggle="tab" class="step">
+												<span class="number">
+												2 </span>
+												<span class="desc">
+												 Select a Inmate Number </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab3" data-toggle="tab" class="step active">
+												<span class="number">
+												3 </span>
+												<span class="desc">
+												 Enter an amount </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab4" data-toggle="tab" class="step">
+												<span class="number">
+												4 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Make Payment </span>
+												</a>
+											</li>
+                                            <li>
+												<a href="#tab5" data-toggle="tab" class="step">
+												<span class="number">
+												5 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Confirm Payment </span>
+												</a>
+											</li>
+										</ul>
+										<div id="bar" class="progress progress-striped" role="progressbar">
+											<div class="progress-bar progress-bar-success">
+											</div>
+										</div>
+										<div class="tab-content">
+											<div class="alert alert-danger display-none">
+												<button class="close" data-dismiss="alert"></button>
+												You have some form errors. Please check below.
+											</div>
+											<div class="alert alert-success display-none">
+												<button class="close" data-dismiss="alert"></button>
+												Your form validation is successful!
+											</div>
+											<div class="tab-pane active" id="tab1">
+												<div class="form-group">
+													<label class="control-label col-md-3">First Name <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="firstname"/>
+														<span class="help-block"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Last Name <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="lastname"/>
+														<span class="help-block"></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">BOP Number <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="bopnumber"/>
+														<span class="help-block"> </span>
+													</div>
+												</div>
+												
+											</div>
+                                            
+											<div class="tab-pane" id="tab2">
+                                               
+                                                  
+							<div class="table-scrollable">
+								<table class="table table-striped table-bordered table-advance table-hover">
+								<thead>
+								<tr>
+									
+									<th>Action</th>
+                                    <th>First name</th>
+                                    <th>Last name</th>
+                                    <th>BOP Number</th>
+								</tr>
+								</thead>
+								<tbody>
+								 <tr>
+                                                                <td>
+                                                                    
+									
+									                   <div class="checkbox-list">
+															<label class="radio-inline"><span class="required">
+													* </span>
+															<input type="checkbox" name="inmates" value="1" data-title="Select inmates."/> 
+                                                            </label>
+															
+														</div>
+                                                                    
+								
+                                                                </td>
+                                                                <td>PATRICK</td>
+                                                                <td>WIMBASH</td>
+                                                                <td>30422-177</td>
+                                                            </tr>
+								
+								</tbody>
+								</table>
+							</div>
+                                                
+                                                  <div class="form-group">
+													<label class="control-label col-md-3 control-label">Pay as <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<div class="radio-list">
+															<label class="radio-inline">
+															<input type="radio" name="logins" id="login" value="Sing" data-title="Sing"/>
+															Signin </label>
+															<label class="radio-inline">
+															<input type="radio" name="logins" id="guest" value="Payment" data-title="Payment"/>
+															Pay as Guest </label>
+														</div>
+														<div id="form_gender_error">
+														</div>
+													</div>
+												</div>    
+
+                                            
+						
+						<div class="portlet-body hidev">
+							<div class="tabbable-custom ">
+								<ul class="nav nav-tabs ">
+									<li class="active">
+										<a href="#tab_5_1" data-toggle="tab">
+										Existing User </a>
+									</li>
+									
+									<li>
+										<a href="#tab_5_2" data-toggle="tab">
+										New User </a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane active " id="tab_5_1">
+										
+                                                    <div class="form-group">
+													<label class="control-label col-md-3">Email <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="username"/>
+														<span class="help-block">
+														 </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Password <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="password" class="form-control" name="password" id="submit_form_password"/>
+														<span class="help-block">
+														 </span>
+													</div>
+												</div>
+                                                                             
+                                      
+                                                                      
+									</div>
+									<div class="tab-pane" id="tab_5_2">
+										<div class="form-group">
+													<label class="control-label col-md-3">Username <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="username"/>
+														<span class="help-block">
+														 </span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Password <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="password" class="form-control" name="password" id="submit_form_password"/>
+														<span class="help-block">
+														 </span>
+													</div>
+												</div>
+                                        <div class="form-group">
+													<label class="control-label col-md-3">Confirm Password <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="password" class="form-control" name="password" id="submit_form_password"/>
+														<span class="help-block">
+														 </span>
+													</div>
+												</div>
+									</div>
+									
+								</div>
+							</div>
+							
+						</div>
+                                             
+                                                
+											
+                                                
+												
+                                                     
+                                        </div>
+                                            
+                                            
+                                            <div class="tab-pane" id="tab3">
+												<div class="form-group">
+										<label class="control-label col-md-3">Enter Amount <span class="required">
+													* </span></label>
+                                                    <div class="col-md-4">
+										<input type="text" class="form-control" name="amount" />
+                                                        <span class="help-block"></span>
+                                                    </div>
+									</div>
+												
+												
+											</div>
+									
+                                            
+                                            
+                                            	<div class="tab-pane" id="tab4">
+												<h3 class="block">Provide your billing details</h3>
+                                                <div class="form-group">
+                                                     <label class="control-label col-md-3"></label>
+													<div class="col-md-4">
+														<span class="checked"><input type="checkbox" name="optionsRadios" id="optionsRadios25" value="option1" checked="">Auto fill the address</span>
+														<span class="help-block">
+														</span>
+													</div>
+												</div> 
+                                                   
+												<div class="form-group">
+													<label class="control-label col-md-3">Billing Address<span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="Billingaddress"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">City<span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="city"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">State <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="" class="form-control" name="state"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Country<span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+											<select class="form-control country" name="lcountry">
+												<option value="">Select...</option>
+												<option value="Option 1">France</option>
+												<option value="Option 2">India</option>
+												<option value="Option 3">USA</option>
+												<option value="Option 4">Option 4</option>
+											</select>
+										</div>
+												</div>
+                                                       	<div class="form-group">
+													<label class="control-label col-md-3">Zip Code<span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="" class="form-control" name="zipcode"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+                                                          	<div class="form-group">
+													<label class="control-label col-md-3">Phone Number<span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="" class="form-control" name="phone"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+                                                
+                                                     <hr>
+                                                  <h3>Provide your credit card details</h3>  
+                                               
+                                                    
+                                              
+												<div class="form-group">
+													<label class="control-label col-md-3">Card Holder Name <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="card_name"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Card Number <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" class="form-control" name="card_number"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">CVC <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="" class="form-control" name="card_cvc"/>
+														<span class="help-block">
+														</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Expiration(MM/YYYY) <span class="required">
+													* </span>
+													</label>
+													<div class="col-md-4">
+														<input type="text" placeholder="MM/YYYY" maxlength="7" class="form-control" name="card_expiry_date"/>
+														<span class="help-block">
+														e.g 11/2020 </span>
+													</div>
+												</div>
+                              
+												<div class="form-group">
+                                                    
+                                                    
+                                                   
+												</div>
+											</div>
+                                            
+                                            <div class="tab-pane" id="tab5">
+												<h3 class="block">Confirm your account</h3>
+												<h4 class="form-section">Account</h4>
+												<div class="form-group">
+													<label class="control-label col-md-3">Username:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="username">
+														</p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Email:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="email">
+														</p>
+													</div>
+												</div>
+												
+												<h4 class="form-section">Billing</h4>
+												<div class="form-group">
+													<label class="control-label col-md-3">Card Holder Name:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="card_name">
+														</p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Card Number:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="card_number">
+														</p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">CVC:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="card_cvc">
+														</p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Expiration:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="card_expiry_date">
+														</p>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="control-label col-md-3">Payment Options:</label>
+													<div class="col-md-4">
+														<p class="form-control-static" data-display="payment[]">
+														</p>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="form-actions">
+										<div class="row">
+											<div class="col-md-offset-3 col-md-9">
+												<a href="javascript:;" class="btn default button-previous">
+												<i class="m-icon-swapleft"></i> Back </a>
+												<a href="javascript:;" class="btn blue button-next">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+												</a>
+												<a href="javascript:;" class="btn green button-submit">
+												Submit <i class="m-icon-swapright m-icon-white"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+
+<!-- <script>
+jQuery(document).ready(function() { 
+	
+    
+    $("[name='firstname']").focus();
+	 $(".hidev").hide(); 
+     
+     $("#login").click(function(){
+         $(".hidev").show(); 
+     });
+     
+     $("#guest").click(function(){
+         $(".hidev").hide();					
+     });
+      
+	
+   // initiate layout and plugins
+   Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+QuickSidebar.init(); // init quick sidebar
+Demo.init(); // init demo features
+FormWizard.init();
+});
+</script> -->

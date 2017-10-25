@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.User" table="users">
+        <id name="customerID" type="java.lang.Integer">
+            <column name="CustomerID" length="11" />
+            <generator class="identity"/>
+        </id>     
+        <property name="password" type="string">
+            <column name="password" length="255"/>
+        </property>
+          <property name="type" type="string">
+            <column name="Type" length="55"/>
+        </property>
+          <property name="securityQuestion" type="string">
+            <column name="SecurityQuestion" length="1000"/>
+        </property>
+          <property name="answer" type="string">
+            <column name="Answer" length="255"/>
+        </property>
+          <property name="emailID" type="string">
+            <column name="EmailID" length="255"/>
+        </property>
+          <property name="active" type="java.lang.Byte">
+            <column name="Active" length="1"/>
+        </property>     
+         <property name="createdBy" type="string">
+            <column name="CreatedBy" length="255"/>
+        </property>
+          <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>
+          <property name="updatedBy" type="string">
+            <column name="UpdatedBy" length="255"/>
+        </property>
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>                 
+        <many-to-one name="role" class="com.ylc.domain.Role" fetch="select">
+            <column name="RoleID" not-null="true" />
+        </many-to-one>    
+         <one-to-one name="customer" class="com.ylc.domain.Customer"></one-to-one>
+		 <set name="customerLines" table="customer_lines" 
+				inverse="true" lazy="true" fetch="select">
+			  <key>
+                <column name="CustomerID" not-null="true" />
+            </key>
+            <one-to-many class="com.ylc.domain.CustomerLine" />
+        </set>	  
+    </class>
+</hibernate-mapping>

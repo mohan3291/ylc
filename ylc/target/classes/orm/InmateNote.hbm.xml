@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.InmateNote" table="inmate_notes">
+        <id name="inmateNaotesID" type="java.lang.Integer">
+            <column name="InmateNaotesID" length="11" />
+            <generator class="native"/>
+        </id>   
+          <property name="inmateNotes" type="string">
+            <column name="InmateNotes" length="255"/>
+        </property>  
+          <property name="createdBy" type="string">
+            <column name="CreatedBy" length="60"/>
+        </property>
+          <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>           
+        <many-to-one name="inMate" class="com.ylc.domain.InMate" fetch="select">
+            <column name="InmateID" not-null="true" />
+        </many-to-one>                          
+    </class>
+</hibernate-mapping>

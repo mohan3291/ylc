@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.PrepaidPricing" table="prepaid_pricing">
+        <id name="prepaidPricingID" type="java.lang.Integer">
+            <column name="PrepaidPricingID" length="11" />
+            <generator class="native"/>
+        </id>   
+          <property name="nameOfBlock" type="string">
+            <column name="NameOfBlock" length="50" />
+        </property>  
+          <property name="noOfMinutes" type="java.lang.Integer">
+            <column name="NoOfMinutes" length="11"/>
+        </property>
+          <property name="description" type="string">
+            <column name="Description" length="255"/>
+        </property>
+         <property name="blockPrice" type="big_decimal">
+             <column name="BlockPrice" precision="10" scale="2"/>
+         </property>
+          <property name="active" type="java.lang.Byte">
+            <column name="Active" length="1"/>
+        </property>
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>        
+         <property name="CreatedDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>        
+         <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>        
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>                                 
+    </class>
+</hibernate-mapping>

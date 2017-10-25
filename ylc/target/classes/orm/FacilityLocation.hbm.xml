@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.FacilityLocation" table="facility_locations">
+        <id name="facilityID" type="java.lang.Integer">
+            <column name="FacilityID" length="11" />
+            <generator class="native"/>
+        </id>     
+         <property name="facilityName" type="string">
+            <column name="FacilityName" length="255"/>
+        </property>  
+          <property name="phone" type="string">
+            <column name="phone" length="255"/>
+        </property>
+          <property name="inmates" type="java.lang.Float">
+            <column name="inmates" length="45"/>
+        </property>       
+           <property name="address" type="string">
+            <column name="address" length="255" />
+        </property>
+           <property name="citystatezip" type="string">
+            <column name="citystatezip" length="255" />
+        </property>
+          <property name="f7" type="string">
+            <column name="f7" length="255" />
+        </property>
+            <property name="timezone" type="string">
+            <column name="timezone" length="255" />
+        </property>  
+         <many-to-one name="rateCenter" class="com.ylc.domain.RateCenter" fetch="select">
+            <column name="RateCenterID" not-null="true" />
+        </many-to-one>                              
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,4 @@
+email access 
+https://www.google.com/settings/security/lesssecureapps 
+http://developer.authorize.net/api/cim/
+https://developer.authorize.net/api/reference/

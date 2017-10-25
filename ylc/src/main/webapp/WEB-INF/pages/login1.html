@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Login Form | www.citronIt.com</title>
+</head>
+<body>
+	<center>
+		<br /> <br /> <br />
+		<h1>Login Here</h1>
+		<br />
+		<div style="text-align: center; padding: 30px;border: 1px solid green;width: 250px;">
+			<form method="post" action="j_spring_security_check">
+
+				<table>
+					<tr>
+						<td colspan="2" style="color: red">${message}</td>
+
+					</tr>
+					<tr>
+						<td>User Name:</td>
+						<td><input type="text" name="username" />
+						</td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="password" name="password" />
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><input type="submit" value="Login" />
+						<a href="pay" id="Guest"  title="Guest">Guest</a>
+						</td>
+
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><a href="register" id="register"  title="register">Register</a>
+						
+						</td>
+
+					</tr>
+			</table>
+			</form>
+		</div>
+	</center>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+<div class="alert alert-error" ng-show="error">{{errorMessage}}</div>
+<form class="form-horizontal">
+	<div class="form-wizard">
+		<div class="form-body">
+			<div class="tab-pane active" id="tab1">
+				<div class="form-group">
+					<label class="control-label col-md-3"  for="inmate_firstname">First Name <span class="required">
+					* </span>
+					</label>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="inmate_firstname" ng-model="inmate.firstName" placeholder="First Name"/>
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-3" for="inmate_lastname">Last Name <span class="required">
+					* </span>
+					</label>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="inmate_lastname" ng-model="inmate.lastName" placeholder="Last Name"/>
+						<span class="help-block"></span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="control-label col-md-3">BOP Number <span class="required">
+					* </span>
+					</label>
+					<div class="col-md-4">
+						<input type="text" class="form-control" id="inmate_bopNumber" ng-model="inmate.bopNumber" placeholder="BOPNumber"/>
+						<span class="help-block"> </span>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="form-actions">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-9">
+						<a href="javascript:;" class="btn blue button-next" ng-click="getInmate(inmate)">Continue <i class="m-icon-swapright m-icon-white"></i> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+ <div ng-show=false>
+ <h3>InMate List</h3>
+ 
+<div ng-show=false class="alert alert-info" ng-show="inmates.length == 0">No Railway Stations found</div>
+<table class="table table-bordered table-striped" ng-show="inmates.length > 0">
+	<thead>
+		<tr>		
+ 			<th style="text-align: center;">First Name</th>
+			<th style="text-align: center;">Last Name</th>			
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in inmates">			
+			<td>{{item.firstName}}</td>
+			<td>{{item.lastName}}</td>			
+		</tr>
+	</tbody>
+</table>
+
+</div>

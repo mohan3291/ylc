@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.BillingAddress" table="billing_address">
+        <id name="billingAddressID" type="java.lang.Integer">
+            <column name="BillingAddressID" length="11" />
+            <generator class="native"/>
+        </id>   
+          <property name="address1" type="string">
+            <column name="Address1" length="100" not-null="true" />
+        </property>  
+          <property name="address2" type="string">
+            <column name="Address2" length="100" not-null="true" />
+        </property>
+          <property name="city" type="string">
+            <column name="City" length="45" not-null="true" />
+        </property>
+          <property name="zipCode" type="string">
+            <column name="ZipCode" length="15" not-null="true" />
+        </property>
+        <many-to-one name="country" class="com.ylc.domain.Country" fetch="select">
+            <column name="countryID" not-null="true" />
+        </many-to-one> 
+        <many-to-one name="state" class="com.ylc.domain.State" fetch="select">
+            <column name="stateID" not-null="true" />
+        </many-to-one> 
+        <many-to-one name="user" class="com.ylc.domain.User" fetch="select">
+            <column name="customerID" not-null="true" />
+        </many-to-one>                          
+    </class>
+</hibernate-mapping>

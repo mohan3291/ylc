@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.4
+Version: 3.3.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" ng-app="loginApp">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>Your Local Local | Login Options - Login Form </title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link href="resources/assets/admin/pages/css/login.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME STYLES -->
+<link href="resources/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="resources/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="login">
+<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+<div class="menu-toggler sidebar-toggler">
+</div>
+<!-- END SIDEBAR TOGGLER BUTTON -->
+<!-- BEGIN LOGO -->
+<div class="logo">
+	<a href="index.html">
+	<img src="resources/assets/admin/layout/img/ylc-logo.png"  width="86" alt=""/>
+	</a>
+</div>
+<!-- END LOGO -->
+<!-- BEGIN LOGIN -->
+<div class="content" ng-contrller= "loginCtrl">
+	<!-- BEGIN LOGIN FORM -->
+	<form method="post" action="j_spring_security_check" class="login-form">
+		<h3 class="form-title">Sign In</h3>
+		<div class="form-group"> 
+			${message}
+		</div>
+		<div class="alert alert-danger display-hide">
+			<button class="close" data-close="alert"></button>
+			<span>
+			Enter username and password. </span>
+		</div>
+		<div class="form-group">
+			<!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+			<label class="control-label visible-ie8 visible-ie9">Username</label>
+			<input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username" ng-model="uname"/>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Password</label>
+			<input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password" ng-model="pass"/>
+		</div>
+		<div class="form-actions">
+			<button type="submit" value="Login" class="btn blue uppercase" ng-disabled="(uname == null || uname.length <= 0) || (pass == null && pass.length <= 0)">Login</button>
+			<label class="rememberme check">
+			<input type="checkbox" name="remember" value="1"/>Remember </label>
+			<a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
+		</div>
+		
+		<div class="create-account">
+			<p>
+				<a href="register"  class="uppercase">Create an account</a>
+			</p>
+		</div>
+	</form>
+	<!-- END LOGIN FORM -->
+	<!-- BEGIN FORGOT PASSWORD FORM -->
+	<div class="forget-form" ng-controller="loginCtrl">
+		<h3>Forget Password ?</h3>
+		<p>
+			 Enter your e-mail address below to reset your password.
+		</p>
+		<div class="form-group">
+			<input class="form-control placeholder-no-fix" type="email" autocomplete="off" placeholder="Email" name="email" ng-model="email"/>
+		</div>
+		<div class="form-actions">
+			<button type="button" id="back-btn" class="btn btn-default">Back</button>
+			<button type="button" class="btn blue uppercase pull-right" ng-click="showAlert()">Submit</button>
+		</div>
+	</div>
+	<!-- END FORGOT PASSWORD FORM -->
+</div>
+<div class="copyright">
+	  		 Copyright © 2015 Your Local Call, Inc. All rights reserved. 	
+</div>
+<!-- END LOGIN -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../resources/assets/global/plugins/respond.min.js"></script>
+<script src="../../resources/assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="resources/assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="resources/assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="resources/assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="resources/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="resources/assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="resources/assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="resources/assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="resources/js/lib/angular/angular.js"></script>
+<script src="resources/js/lib/angular/angular-route.js"></script>
+
+<script src="resources/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="resources/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="resources/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script src="resources/assets/admin/pages/scripts/login.js" type="text/javascript"></script>
+<script src="resources/assets/admin/pages/scripts/loginCtrl.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+jQuery(document).ready(function() {     
+Metronic.init(); // init metronic core components
+Layout.init(); // init current layout
+Login.init();
+Demo.init();
+});
+
+
+</script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

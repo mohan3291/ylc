@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="41" failures="0" name="com.ylc.test.TestSuite" time="0.596" errors="3" skipped="37">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/mohanreddysandula/Downloads/shares/Raghu/BeanIntellan/ylc"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/mohanreddysandula/Downloads/shares/Raghu/BeanIntellan/ylc"/>
+    <property name="java.runtime.version" value="1.8.0_111-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/5t/2kg3wxkj5lx2qkh67rqf_3800000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/mohanreddysandula/Documents/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8054022083325179354.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/mohanreddysandula/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/mohanreddysandula"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="mohanreddy"/>
+    <property name="java.class.path" value="/private/var/folders/5t/2kg3wxkj5lx2qkh67rqf_3800000gn/T/AppTranslocation/6E5D0082-3845-45D0-A714-0BA039C0848B/d/Eclipse.app/Contents/Eclipse/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/Users/mohanreddysandula/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/mohanreddysandula/Downloads/shares/Raghu/BeanIntellan/ylc/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.ylc.test.TestCountry" name="insertCounrty" time="0.017">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.471 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@25af5db5 testClass = TestState, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5bcea91b testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.487 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestCountry].
+22:05:37.487 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@3c1e23ff declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.488 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestCountry]
+22:05:37.488 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestCountry]: using defaults.
+22:05:37.488 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestState].
+22:05:37.488 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@ceb4bd2 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.488 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestState]
+22:05:37.489 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestState]: using defaults.
+22:05:37.489 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestRole].
+22:05:37.489 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@60297f36 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.489 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestRole]
+22:05:37.489 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestRole]: using defaults.
+22:05:37.490 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestUser].
+22:05:37.490 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@1bf0f6f6 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.490 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestUser]
+22:05:37.490 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestUser]: using defaults.
+22:05:37.492 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestCustomer].
+22:05:37.493 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@56bc3fac declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.493 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestCustomer]
+22:05:37.493 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestCustomer]: using defaults.
+22:05:37.494 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestBillingService].
+22:05:37.494 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@df4b72 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.494 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestBillingService]
+22:05:37.494 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestBillingService]: using defaults.
+22:05:37.494 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestFacilityLocation].
+22:05:37.494 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@2ba45490 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.494 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestFacilityLocation]
+22:05:37.495 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestFacilityLocation]: using defaults.
+22:05:37.495 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestInmateStatus].
+22:05:37.495 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@37ff4054 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.495 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestInmateStatus]
+22:05:37.495 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestInmateStatus]: using defaults.
+22:05:37.495 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestInMate].
+22:05:37.495 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@894858 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.496 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestInMate]
+22:05:37.496 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestInMate]: using defaults.
+22:05:37.496 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestLineType].
+22:05:37.496 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@7af707e0 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.496 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestLineType]
+22:05:37.496 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestLineType]: using defaults.
+22:05:37.496 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestCustomerLine].
+22:05:37.497 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@737edcfa declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.497 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestCustomerLine]
+22:05:37.497 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestCustomerLine]: using defaults.
+22:05:37.497 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestPaymentCardType].
+22:05:37.497 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@3ecedf21 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.497 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestPaymentCardType]
+22:05:37.497 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestPaymentCardType]: using defaults.
+22:05:37.497 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestPrepaidPricing].
+22:05:37.498 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@74cf8b28 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.498 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestPrepaidPricing]
+22:05:37.498 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestPrepaidPricing]: using defaults.
+22:05:37.498 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestCustomerLinePaymentDetail].
+22:05:37.498 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@36c54a56 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.498 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.499 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestCustomerLinePaymentDetail]: using defaults.
+22:05:37.499 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestCallLog].
+22:05:37.499 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@3359c978 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.499 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestCallLog]
+22:05:37.499 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestCallLog]: using defaults.
+22:05:37.499 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestFacilityNumberPool].
+22:05:37.500 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@7ba63fe5 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.500 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.500 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestFacilityNumberPool]: using defaults.
+22:05:37.500 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestInmateNote].
+22:05:37.500 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@73386d72 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.500 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestInmateNote]
+22:05:37.500 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestInmateNote]: using defaults.
+22:05:37.501 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ylc.test.TestRateCenter].
+22:05:37.501 [main] DEBUG o.s.t.c.s.AbstractDelegatingSmartContextLoader - Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@6f330eb9 declaringClass = &apos;com.ylc.test.BaseTest&apos;, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, inheritLocations = true, initializers = &apos;{}&apos;, inheritInitializers = true, name = [null], contextLoaderClass = &apos;org.springframework.test.context.ContextLoader&apos;].
+22:05:37.502 [main] DEBUG o.s.test.context.ContextLoaderUtils - Could not find an &apos;annotation declaring class&apos; for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ylc.test.TestRateCenter]
+22:05:37.502 [main] DEBUG o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [com.ylc.test.TestRateCenter]: using defaults.
+22:05:37.502 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.502 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCountry]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCountry]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.503 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.504 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.505 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+22:05:37.506 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.507 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+22:05:37.508 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCountry]
+22:05:37.509 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCountry]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.510 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+22:05:37.511 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.512 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.513 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCountry]
+22:05:37.513 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCountry]
+22:05:37.513 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.513 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+22:05:37.513 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.513 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+22:05:37.514 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+22:05:37.515 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.516 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.517 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+22:05:37.518 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCountry]
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCountry]
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCountry]
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCountry]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCountry" name="testBase" time="0.017">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestState" name="insertState" time="0.017">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.519 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@125c082e testClass = TestCountry, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@584f5497 testClass = TestCountry, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestState" name="printStateById" time="0.007">
+    <error message="Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:515)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:644)
+	at com.ylc.service.StateService$$EnhancerBySpringCGLIB$$b4d9d1bc.getStateById(&lt;generated&gt;)
+	at com.ylc.test.TestState.printStateById(TestState.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:427)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	... 52 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:301)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 55 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database &apos;ylc_9&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 60 more
+</error>
+    <system-out>22:05:37.519 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.520 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.520 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@68ace111 testClass = TestState, testInstance = com.ylc.test.TestState@1f9d6c7b, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+22:05:37.520 [main] DEBUG o.s.t.c.CacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+22:05:37.520 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected method of bean &apos;com.ylc.test.TestState&apos;: AutowiredFieldElement for private com.ylc.service.StateService com.ylc.test.TestState.stateService
+22:05:37.520 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;stateService&apos;
+22:05:37.520 [main] DEBUG o.s.o.h.HibernateTransactionManager - Creating new transaction with name [com.ylc.service.StateService.getStateById]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+22:05:37.520 [main] DEBUG o.s.o.h.HibernateTransactionManager - Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
+22:05:37.520 [main] DEBUG o.s.o.h.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+22:05:37.521 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+22:05:37.524 [main] DEBUG o.h.e.jdbc.spi.SqlExceptionHelper - Could not open connection [n/a]
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044) ~[commons-dbcp-1.4.jar:1.4]
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:301) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:427) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429) ~[spring-orm-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:644) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at com.ylc.service.StateService$$EnhancerBySpringCGLIB$$b4d9d1bc.getStateById(&lt;generated&gt;) [spring-core-4.0.5.RELEASE.jar:na]
+	at com.ylc.test.TestState.printStateById(TestState.java:40) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44) [junit-4.8.1.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.8.1.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41) [junit-4.8.1.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.Suite.runChild(Suite.java:128) [junit-4.8.1.jar:na]
+	at org.junit.runners.Suite.runChild(Suite.java:24) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236) [junit-4.8.1.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database &apos;ylc_9&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:381) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545) ~[commons-dbcp-1.4.jar:1.4]
+	... 60 common frames omitted
+22:05:37.525 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null
+22:05:37.525 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+22:05:37.525 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@68ace111 testClass = TestState, testInstance = com.ylc.test.TestState@1f9d6c7b, testMethod = printStateById@TestState, testException = org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection, mergedContextConfiguration = [MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestState" name="printStates" time="0.008">
+    <error message="Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:515)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:644)
+	at com.ylc.service.StateService$$EnhancerBySpringCGLIB$$b4d9d1bc.getStates(&lt;generated&gt;)
+	at com.ylc.test.TestState.printStates(TestState.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:427)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	... 52 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:301)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 55 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database &apos;ylc_9&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 60 more
+</error>
+    <system-out>22:05:37.527 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestState]
+22:05:37.527 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestState]
+22:05:37.527 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@68ace111 testClass = TestState, testInstance = com.ylc.test.TestState@5eefa415, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+22:05:37.528 [main] DEBUG o.s.t.c.CacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+22:05:37.528 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected method of bean &apos;com.ylc.test.TestState&apos;: AutowiredFieldElement for private com.ylc.service.StateService com.ylc.test.TestState.stateService
+22:05:37.528 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;stateService&apos;
+22:05:37.528 [main] DEBUG o.s.o.h.HibernateTransactionManager - Creating new transaction with name [com.ylc.service.StateService.getStates]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+22:05:37.529 [main] DEBUG o.s.o.h.HibernateTransactionManager - Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
+22:05:37.529 [main] DEBUG o.s.o.h.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+22:05:37.529 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+22:05:37.533 [main] DEBUG o.h.e.jdbc.spi.SqlExceptionHelper - Could not open connection [n/a]
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044) ~[commons-dbcp-1.4.jar:1.4]
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:301) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:427) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429) ~[spring-orm-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:644) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at com.ylc.service.StateService$$EnhancerBySpringCGLIB$$b4d9d1bc.getStates(&lt;generated&gt;) [spring-core-4.0.5.RELEASE.jar:na]
+	at com.ylc.test.TestState.printStates(TestState.java:57) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44) [junit-4.8.1.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.8.1.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41) [junit-4.8.1.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.Suite.runChild(Suite.java:128) [junit-4.8.1.jar:na]
+	at org.junit.runners.Suite.runChild(Suite.java:24) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236) [junit-4.8.1.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database &apos;ylc_9&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:381) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545) ~[commons-dbcp-1.4.jar:1.4]
+	... 60 common frames omitted
+22:05:37.533 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null
+22:05:37.533 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+22:05:37.534 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@68ace111 testClass = TestState, testInstance = com.ylc.test.TestState@5eefa415, testMethod = printStates@TestState, testException = org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection, mergedContextConfiguration = [MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestState" name="testBase" time="0.008">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestRole" name="insertRole" time="0.009">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.535 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@68ace111 testClass = TestState, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6df20ade testClass = TestState, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.535 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.535 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+22:05:37.535 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRole]
+22:05:37.535 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRole]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestRole" name="testBase" time="0.009">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestUser" name="insertUser" time="0.009">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.536 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@7f4d9395 testClass = TestRole, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2f19f2aa testClass = TestRole, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.536 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.536 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.536 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.536 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestUser" name="getUser" time="0.01">
+    <error message="Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection" type="org.springframework.transaction.CannotCreateTransactionException">org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:515)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:644)
+	at com.ylc.service.UserService$$EnhancerBySpringCGLIB$$7fb5c6fa.findByUserByEmail(&lt;generated&gt;)
+	at com.ylc.test.TestUser.getUser(TestUser.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:24)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:124)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:109)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:221)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157)
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:427)
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429)
+	... 52 more
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044)
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141)
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:301)
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214)
+	... 55 more
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database &apos;ylc_9&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.Util.getInstance(Util.java:381)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910)
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031)
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545)
+	... 60 more
+</error>
+    <system-out>22:05:37.536 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestUser]
+22:05:37.536 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestUser]
+22:05:37.537 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@344b8190 testClass = TestUser, testInstance = com.ylc.test.TestUser@6a078481, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@79c5636f testClass = TestUser, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]]].
+22:05:37.537 [main] DEBUG o.s.t.c.CacheAwareContextLoaderDelegate - Retrieved ApplicationContext from cache with key [[MergedContextConfiguration@79c5636f testClass = TestUser, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]].
+22:05:37.538 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected method of bean &apos;com.ylc.test.TestUser&apos;: AutowiredFieldElement for private com.ylc.service.UserService com.ylc.test.TestUser.userService
+22:05:37.538 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;userService&apos;
+22:05:37.539 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name &apos;com.ylc.test.TestUser&apos; to bean named &apos;userService&apos;
+22:05:37.539 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+22:05:37.539 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean &apos;org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0&apos;
+22:05:37.539 [main] DEBUG o.s.o.h.HibernateTransactionManager - Creating new transaction with name [com.ylc.service.UserService.findByUserByEmail]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+22:05:37.540 [main] DEBUG o.s.o.h.HibernateTransactionManager - Opened new Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])] for Hibernate transaction
+22:05:37.540 [main] DEBUG o.s.o.h.HibernateTransactionManager - Preparing JDBC Connection of Hibernate Session [SessionImpl(PersistenceContext[entityKeys=[],collectionKeys=[]];ActionQueue[insertions=[] updates=[] deletions=[] orphanRemovals=[] collectionCreations=[] collectionRemovals=[] collectionUpdates=[] collectionQueuedOps=[] unresolvedInsertDependencies=UnresolvedEntityInsertActions[]])]
+22:05:37.540 [main] DEBUG o.h.e.j.i.LogicalConnectionImpl - Obtaining JDBC connection
+22:05:37.543 [main] DEBUG o.h.e.jdbc.spi.SqlExceptionHelper - Could not open connection [n/a]
+org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1549) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1388) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:1044) ~[commons-dbcp-1.4.jar:1.4]
+	at org.hibernate.service.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:141) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:301) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:214) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:157) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.hibernate.internal.SessionImpl.connection(SessionImpl.java:427) ~[hibernate-core-4.2.11.Final.jar:4.2.11.Final]
+	at org.springframework.orm.hibernate4.HibernateTransactionManager.doBegin(HibernateTransactionManager.java:429) ~[spring-orm-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:420) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:257) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:95) [spring-tx-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:644) [spring-aop-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at com.ylc.service.UserService$$EnhancerBySpringCGLIB$$7fb5c6fa.findByUserByEmail(&lt;generated&gt;) [spring-core-4.0.5.RELEASE.jar:na]
+	at com.ylc.test.TestUser.getUser(TestUser.java:55) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44) [junit-4.8.1.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15) [junit-4.8.1.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41) [junit-4.8.1.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:233) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:87) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236) [junit-4.8.1.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:176) [spring-test-4.0.5.RELEASE.jar:4.0.5.RELEASE]
+	at org.junit.runners.Suite.runChild(Suite.java:128) [junit-4.8.1.jar:na]
+	at org.junit.runners.Suite.runChild(Suite.java:24) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184) [junit-4.8.1.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236) [junit-4.8.1.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_111]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database &apos;ylc_9&apos;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.Util.getInstance(Util.java:381) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1030) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:956) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3491) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3423) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:910) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.secureAuth411(MysqlIO.java:3923) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1273) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2031) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:718) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.JDBC4Connection.&lt;init&gt;(JDBC4Connection.java:46) ~[mysql-connector-java-5.1.6.jar:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_111]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_111]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302) ~[mysql-connector-java-5.1.6.jar:na]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282) ~[mysql-connector-java-5.1.6.jar:na]
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:582) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1556) ~[commons-dbcp-1.4.jar:1.4]
+	at org.apache.commons.dbcp.BasicDataSource.createPoolableConnectionFactory(BasicDataSource.java:1545) ~[commons-dbcp-1.4.jar:1.4]
+	... 60 common frames omitted
+22:05:37.544 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null
+22:05:37.544 [main] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot create PoolableConnectionFactory (Unknown database &apos;ylc_9&apos;)
+22:05:37.544 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test method: context [DefaultTestContext@344b8190 testClass = TestUser, testInstance = com.ylc.test.TestUser@6a078481, testMethod = getUser@TestUser, testException = org.springframework.transaction.CannotCreateTransactionException: Could not open Hibernate Session for transaction; nested exception is org.hibernate.exception.GenericJDBCException: Could not open connection, mergedContextConfiguration = [MergedContextConfiguration@79c5636f testClass = TestUser, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestUser" name="testBase" time="0.011">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomer" name="insertCustomer" time="0.012">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.547 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@344b8190 testClass = TestUser, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@79c5636f testClass = TestUser, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.547 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.548 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+22:05:37.548 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomer]
+22:05:37.548 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomer]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomer" name="getCustomer" time="0.012">
+    <skipped message="Only one time "/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomer" name="testBase" time="0.012">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestBillingService" name="insertBilling" time="0.013">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.548 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@2617f816 testClass = TestCustomer, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@676f0a60 testClass = TestCustomer, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.548 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.548 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestBillingService]
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestBillingService]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestBillingService" name="testBase" time="0.013">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestFacilityLocation" name="InsertFacility" time="0.013">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.549 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@5d10455d testClass = TestBillingService, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@535b8c24 testClass = TestBillingService, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityLocation]
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityLocation]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestFacilityLocation" name="testBase" time="0.013">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestInmateStatus" name="insertInmateStatus" time="0.014">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.549 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@4a951911 testClass = TestFacilityLocation, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@55b62629 testClass = TestFacilityLocation, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.549 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+22:05:37.550 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateStatus]
+22:05:37.550 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateStatus]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestInmateStatus" name="testBase" time="0.014">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestInMate" name="insertInmate" time="0.015">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.550 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@a53bb6f testClass = TestInmateStatus, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5e63cad testClass = TestInmateStatus, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.550 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.550 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+22:05:37.550 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInMate]
+22:05:37.550 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInMate]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestInMate" name="testBase" time="0.015">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestLineType" name="insertLineType" time="0.015">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.551 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@6759f091 testClass = TestInMate, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@33a053d testClass = TestInMate, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestLineType]
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestLineType]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestLineType" name="testBase" time="0.015">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomerLine" name="insertCustomerLine" time="0.016">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.551 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@14a54ef6 testClass = TestLineType, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@20921b9b testClass = TestLineType, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLine]
+22:05:37.551 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLine]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomerLine" name="testBase" time="0.016">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestPaymentCardType" name="inssertPaymetCardType" time="0.016">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.552 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@867ba60 testClass = TestCustomerLine, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5ba745bc testClass = TestCustomerLine, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPaymentCardType]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPaymentCardType]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestPaymentCardType" name="testBase" time="0.016">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestPrepaidPricing" name="insertPrepaidPricing" time="0.016">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.552 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@654b72c0 testClass = TestPaymentCardType, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@55b5e331 testClass = TestPaymentCardType, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestPrepaidPricing]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestPrepaidPricing]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestPrepaidPricing" name="testBase" time="0.016">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomerLinePaymentDetail" name="testAddCustomerLinePaymentDetail" time="0.017">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.552 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@6034e75d testClass = TestPrepaidPricing, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@15fc442 testClass = TestPrepaidPricing, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.552 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCustomerLinePaymentDetail]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCustomerLinePaymentDetail]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCustomerLinePaymentDetail" name="testBase" time="0.017">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCallLog" name="saveCallLog" time="0.017">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.553 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@3f3c7bdb testClass = TestCustomerLinePaymentDetail, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@456abb66 testClass = TestCustomerLinePaymentDetail, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestCallLog]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestCallLog]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestCallLog" name="testBase" time="0.017">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestFacilityNumberPool" name="testSaveFacilityNumberPool" time="0.018">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.553 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@2a3a299 testClass = TestCallLog, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@7da10b5b testClass = TestCallLog, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestFacilityNumberPool]
+22:05:37.553 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestFacilityNumberPool]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestFacilityNumberPool" name="testBase" time="0.018">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestInmateNote" name="insertInmateNote" time="0.018">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.554 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@219f4597 testClass = TestFacilityNumberPool, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@31be6b49 testClass = TestFacilityNumberPool, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestInmateNote]
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestInmateNote]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestInmateNote" name="testBase" time="0.018">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestRateCenter" name="inserRateCenter" time="0.018">
+    <skipped message="Only one time insert"/>
+    <system-out>22:05:37.554 [main] DEBUG o.s.t.c.s.DirtiesContextTestExecutionListener - After test class: context [DefaultTestContext@2e16b08d testClass = TestInmateNote, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@5b989dc7 testClass = TestInmateNote, locations = &apos;{file:src/main/webapp/WEB-INF/spring-service.xml, file:src/main/webapp/WEB-INF/spring-database.xml}&apos;, classes = &apos;{}&apos;, contextInitializerClasses = &apos;[]&apos;, activeProfiles = &apos;{}&apos;, contextLoader = &apos;org.springframework.test.context.support.DelegatingSmartContextLoader&apos;, parent = [null]]], dirtiesContext [false].
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ylc.test.TestRateCenter]
+22:05:37.554 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ylc.test.TestRateCenter]
+</system-out>
+  </testcase>
+  <testcase classname="com.ylc.test.TestRateCenter" name="testBase" time="0.019">
+    <skipped message="Only one time insert"/>
+  </testcase>
+  <testcase classname="com.ylc.test.TestDB" name="testDBConnection" time="0.025"/>
+</testsuite>

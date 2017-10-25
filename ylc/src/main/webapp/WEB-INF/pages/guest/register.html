@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<script src="resources/js/lib/angular/angular.js"></script>
+<script src="resources/js/validateCtrl.js"></script>
+
+<head>
+<meta charset="utf-8"/>
+<title>Your Local Local | Login Options - Login Form </title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL STYLES -->
+<link href="resources/assets/admin/pages/css/login.css" rel="stylesheet" type="text/css"/>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME STYLES -->
+<link href="resources/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+<link href="resources/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css" id="style_color"/>
+<link href="resources/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="login">
+<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+<div class="menu-toggler sidebar-toggler">
+</div>
+<!-- END SIDEBAR TOGGLER BUTTON -->
+<!-- BEGIN LOGO -->
+<div class="logo">
+	<a href="index.html">
+	<img src="resources/assets/admin/layout/img/ylc-logo.png"  width="86" alt=""/>
+	</a>
+</div>
+<!-- END LOGO -->
+<!-- BEGIN LOGIN -->
+<div class="content">
+	<!-- BEGIN LOGIN FORM -->
+	<form method="post" ng-app="myApp" ng-controller="validateCtrl" name="registerForm" novalidate action="saveUser" class="login-form">
+		<h3>Sign Up</h3>
+			<div class="form-group">
+			${message}
+			</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">email</label>
+			<input class="form-control placeholder-no-fix" type="email" autocomplete="off" placeholder="email" name="email" ng-model="email" required />
+			<!-- <span class="error" ng-show="registerForm.email.$error.required">
+        		Required!</span> -->
+			<div role="alert">
+		      <span class="error" ng-show="registerForm.email.$error.email">
+		        Not valid email!</span>
+		    </div>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Password</label>
+			<!-- <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password" 
+			ng-model="password" data-ng-class="{'ng-invalid':registerForm.rpassword.$error.match}"/> -->
+			
+			<input class="form-control placeholder-no-fix" ng-model="password" type="password" name="password" placeholder="Password" required
+			 />
+			  <span class="error" ng-show="registerForm.password.$error.required">
+        		Required!</span>
+		</div>
+		<div class="form-group">
+			<label class="control-label visible-ie8 visible-ie9">Re-type Your Password</label>
+			<!-- <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="rpassword" match="password" /> -->
+			<input class="form-control placeholder-no-fix" ng-model="confirmPassword" type="password" data-password-verify="password" name="confirmPassword" autocomplete="off" placeholder="Re-type Your Password" required/>
+			<div ng-show="registerForm.confirmPassword.$error.passwordVerify">Passwords do not match!</div>
+			 <span class="error" ng-show="registerForm.confirmPassword.$error.required">
+        		Required!</span> 
+		</div>
+		<div class="form-group margin-top-20 margin-bottom-20">
+			<label class="check">
+			<input type="checkbox" name="tnc"/> I agree to the <a href="javascript:;">
+			Terms of Service </a>
+			& <a href="javascript:;">
+			Privacy Policy </a>
+			</label>
+			<div id="register_tnc_error">
+			</div>
+		</div>
+		<div class="form-actions">
+			<a href="login"><button type="button" id="register-back-btn" class="btn btn-primary default"><i class="m-icon-swapleft"></i>  Back</button></a>
+			<button type="submit" id="register-submit-btn" class="btn blue uppercase pull-right" ng-click="submit()" ng-disabled="validform()">Submit</button>
+		</div>
+	</form>
+	<!-- END LOGIN FORM -->
+		
+	<!-- END REGISTRATION FORM -->
+</div>
+<div class="copyright">
+	  		 Copyright © 2015 Your Local Call, Inc. All rights reserved. 	
+</div>
+
+<script src="resources/assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="resources/assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+<script src="resources/assets/admin/layout/scripts/demo.js" type="text/javascript"></script>
+<script src="resources/assets/admin/pages/scripts/login.js" type="text/javascript"></script>
+
+</body>
+</html>

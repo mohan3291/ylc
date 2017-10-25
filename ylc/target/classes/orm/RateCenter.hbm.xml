@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.RateCenter" table="rate_centers" >
+        <id name="rateCenterID" type="java.lang.Integer">
+            <column name="RateCenterID" length="11" />
+            <generator class="native"/>
+        </id>   
+           <property name="rateCenterName" type="string">
+            <column name="RateCenterName" length="255" />
+        </property>        
+         <property name="npanxx" type="java.lang.Integer">
+            <column name="Npanxx" length="255"/>
+        </property>        
+         <property name="effective" type="timestamp">
+             <column name="Effective" length="19"/>
+        </property>             
+         <property name="lata" type="java.lang.Integer">
+            <column name="Lata" length="11"/>
+        </property>   
+             <property name="ocn" type="string">
+            <column name="Ocn" length="45" />
+        </property>  
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>        
+         <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>     
+         <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>        
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>  
+         <property name="localExchanges" type="string">
+            <column name="localexchanges" length="255" />
+        </property>                       
+    </class>
+</hibernate-mapping>

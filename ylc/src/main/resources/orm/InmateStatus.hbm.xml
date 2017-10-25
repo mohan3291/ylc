@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.InmateStatus" table="inmate_status">
+        <id name="inmateStatusID" type="java.lang.Integer">
+            <column name="InmateStatusID" length="11" />
+            <generator class="native"/>
+        </id>     
+        <property name="inmateStatusName" type="string">
+            <column name="InmateStatusName" length="55" />
+        </property>
+          <property name="inmateStatusDescription" type="string">
+            <column name="InmateStatusDescription" length="255"/>
+        </property> 
+                     
+    </class>
+</hibernate-mapping>

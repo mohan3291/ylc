@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.CallLog" table="call_log">
+        <id name="lineCallLogID" type="java.lang.Integer">
+            <column name="LineCallLogID" length="11" />
+            <generator class="native"/>
+        </id>          
+         <property name="localLineNumber" type="string">
+            <column name="LocalLineNumber" length="255" not-null="true" />
+        </property>        
+         <property name="destinationLineNumber" type="string">
+            <column name="DestinationLineNumber" length="255" not-null="true" />
+        </property>        
+         <property name="callStartDateTime" type="timestamp">
+             <column name="CallStartDateTime" length="19"/>
+        </property>             
+         <property name="CallEndDateTime" type="timestamp">
+            <column name="CallEndDateTime" length="19"/>
+        </property>        
+         <property name="callDuration" type="string">
+            <column name="CallDuration" length="55"/>
+        </property>        
+         <property name="MinutesLeft" type="java.lang.Integer">
+            <column name="MinutesLeft" length="11"/>
+        </property>        
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>        
+         <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>     
+         <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>        
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>       
+        <many-to-one name="customerLinePaymentDetail" class="com.ylc.domain.CustomerLinePaymentDetail" fetch="select">
+            <column name="LinePaymentDetailID" not-null="true" />
+        </many-to-one>                          
+    </class>
+</hibernate-mapping>

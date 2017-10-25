@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.InmateReferral" table="inmate_referrals">
+        <id name="inmateReferralID" type="java.lang.Integer">
+            <column name="InmateReferralID" length="11" />
+            <generator class="native"/>
+        </id>   
+       <many-to-one name="inMate" class="com.ylc.domain.InMate" fetch="select">
+            <column name="InmateID" not-null="true" />
+        </many-to-one>
+         <many-to-one name="inMateReferredBy" class="com.ylc.domain.InMate" fetch="select">
+            <column name="ReferredByID" not-null="true" />
+        </many-to-one>                          
+    </class>
+</hibernate-mapping>

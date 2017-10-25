@@ -1,0 +1,153 @@
+<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+			Account Information <small>Account Information</small>
+			</h3>
+	
+			<!-- END PAGE HEADER-->
+            <div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 margin-bottom-10">
+					<div class="dashboard-stat blue-madison">
+						<div class="visual">
+							<i class="fa fa-briefcase fa-icon-medium"></i>
+						</div>
+					<div class="alert">
+							<h2 class="number">Alert</h2>
+                            <div class="desc">
+								Total Outstanding balance:$0.00
+							</div>
+						
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="dashboard-stat red-intense">
+						<div class="visual">
+							<i class="fa fa-shopping-cart"></i>
+						</div>
+						<div class="alert">
+							<div class="number">
+								Credit card information
+							</div>
+							<div class="desc">
+								 Card Type :        XXXX
+							</div>
+                            <div class="desc">
+								 Card Number :     
+							</div>
+                            <div class="desc">
+								 Expiry Date :      XXXX
+							</div>
+                            
+                            <div class="desc rightbutton1"><a class="btn btn-default pull-right" data-toggle="modal" href="#save_card"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;&nbsp;Add / Edit Credit Card</a></div>
+                          
+						</div>
+						 
+					</div>
+				</div>
+			
+			</div>
+            
+            
+			<!-- BEGIN PAGE CONTENT-->
+            <!--Start Account inforamtion-->
+      <div class="row">
+				<div class="col-md-12">
+					<!-- BEGIN SAMPLE TABLE PORTLET-->
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption">
+								<i class="fa fa-comments"></i>Account Information
+							</div>
+                            <div class="">
+                               
+                                
+                            <a href="#editModal" data-toggle="modal" class="btn editaccount  pull-right"><span class="glyphicons glyphicons-edit"></span>&nbsp;&nbsp;Edit Account Information</a>
+                                 <a href="#save_card1" data-toggle="modal" class="btn  changepass  pull-right"><span class="glyphicons glyphicons-unlock"></span>&nbsp;&nbsp;Change Password</a>
+                            
+                            </div>
+						
+						</div>
+						<div class="box-info full">
+					<div class="table-responsive">
+						<table class="table tableaccount" data-sortable="">
+							<thead>
+								
+							</thead>
+							<tbody>
+								<tr>
+									<td width="20%"><b>User ID</b></td>
+									<td>{{accountDetails.userID}}</td>
+									<td width="20%"><b>Address 2</b></td>
+									<td>{{accountDetails.userID}}</td>
+								</tr>
+								<tr>
+									<td><b>First Name</b></td>
+									<td>{{accountDetails.firstName}}</td>
+									<td><b>City</b></td>
+									<td>{{accountDetails.city}}</td>
+								</tr>
+								<tr>
+									<td><b>Middle Name</b></td>
+									<td>{{accountDetails.middleName}}</td>
+									<td><b>State</b></td>
+									<td>{{accountDetails.state}}</td>
+								</tr>
+								<tr>
+									<td><b>Last Name</b></td>
+									<td>{{accountDetails.lastName}}</td>
+									<td><b>Country</b></td>
+									<td>{{accountDetails.country}}</td>
+								</tr>
+								<tr>
+									<td><b>Contact Number</b></td>
+									<td>{{accountDetails.mobileNumber}}</td>
+									<td><b>Zip Code</b></td>
+									<td>{{accountDetails.zip}}</td>
+								</tr>
+								<tr>
+									<td><b>Address 1</b></td>
+									<td>{{accountDetails.address1}}</td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div><!--End portlet body-->
+					</div>
+					<!-- END SAMPLE TABLE PORTLET-->
+				</div>
+				
+			</div>
+            <!--End Account Information-->
+            
+
+			<!-- END PAGE CONTENT -->
+		</div>
+	</div>

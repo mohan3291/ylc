@@ -1,0 +1,495 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+-- -----------------------------------------------------
+-- Schema ylc
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `ylc` ;
+-- -----------------------------------------------------
+-- Schema ylc
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `ylc` DEFAULT CHARACTER SET utf8 ;
+USE `ylc` ;
+
+-- -----------------------------------------------------
+-- Table `ylc`.`countries`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`countries` (
+  `CountryID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `CountryName` VARCHAR(100) NOT NULL COMMENT '',
+  `CountryAbbr` VARCHAR(2) NOT NULL COMMENT '',
+  `CountryCode` INT(4) NOT NULL COMMENT '',
+  PRIMARY KEY (`CountryID`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`states`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`states` (
+  `StateID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `StateName` VARCHAR(255) NOT NULL COMMENT '',
+  `StateAbbr` VARCHAR(2) NOT NULL COMMENT '',
+  PRIMARY KEY (`StateID`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`billing_address`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`billing_address` (
+  `BillingAddressID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `CustomerID` INT(11) NOT NULL COMMENT '',
+  `Address1` VARCHAR(100) NOT NULL COMMENT '',
+  `Address2` VARCHAR(100) NULL DEFAULT NULL COMMENT '',
+  `City` VARCHAR(45) NOT NULL COMMENT '',
+  `ZipCode` VARCHAR(15) NOT NULL COMMENT '',
+  `StateID` INT(11) NOT NULL COMMENT '',
+  `CountryID` INT(11) NOT NULL COMMENT '',
+  PRIMARY KEY (`BillingAddressID`)  COMMENT '',
+  INDEX `FK_StateID_idx` (`StateID` ASC)  COMMENT '',
+  INDEX `FK_CountryID_idx` (`CountryID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Billing_Address_CountryID`
+    FOREIGN KEY (`CountryID`)
+    REFERENCES `ylc`.`countries` (`CountryID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Billing_Address_StateID`
+    FOREIGN KEY (`StateID`)
+    REFERENCES `ylc`.`states` (`StateID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+ CONSTRAINT `FK_Billing_Address_CustomerID`
+    FOREIGN KEY (`CustomerID`)
+    REFERENCES `ylc`.`users` (`CustomerID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`roles`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`roles` (
+  `RoleID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `RoleName` VARCHAR(255) NOT NULL COMMENT '',
+  `Active` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`RoleID`)  COMMENT '',
+  UNIQUE INDEX `RoleName_UNIQUE` (`RoleName` ASC)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`users` (
+  `CustomerID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `RoleID` INT(11) NOT NULL COMMENT '',
+  `Password` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `Type` VARCHAR(55) NULL DEFAULT NULL COMMENT '',
+  `SecurityQuestion` VARCHAR(1000) NULL DEFAULT NULL COMMENT '',
+  `Answer` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `EmailID` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `Active` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`CustomerID`)  COMMENT '',
+  UNIQUE INDEX `EmailID_UNIQUE` (`EmailID` ASC)  COMMENT '',
+  INDEX `FK_UserRole_idx` (`RoleID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Users_UserRole_ID`
+    FOREIGN KEY (`RoleID`)
+    REFERENCES `ylc`.`roles` (`RoleID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`customers`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`customers` (
+  `CustomerID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',  
+  `ReferralCustomerID` INT(11) NULL DEFAULT NULL COMMENT '',
+  `FirstName` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `MiddleName` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `LastName` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `MobileNumber` VARCHAR(11) NULL DEFAULT NULL COMMENT '',
+  `Address1` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `Address2` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `City` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `RecurringPayment` BIT(1) NULL DEFAULT NULL COMMENT '',
+  `RecurringPaymentDate` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
+  `RecurringPaymentAmount` DECIMAL(10,2) NULL DEFAULT NULL COMMENT '',
+  `StateID` INT(11) NOT NULL COMMENT '',
+  `CountryID` INT(11) NOT NULL COMMENT '',
+  `ZipCode` VARCHAR(11) NULL DEFAULT NULL COMMENT '',
+  `Active` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `PaymentGatewayId` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `PrepaidAmount` DECIMAL(10,2) NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`CustomerID`)  COMMENT '',
+  INDEX `FK_StateID_idx` (`StateID` ASC)  COMMENT '',
+  INDEX `FK_CountryID_idx` (`CountryID` ASC)  COMMENT '',
+  INDEX `FK_Customers_User_idx` (`CustomerID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Customers_CountryID`
+    FOREIGN KEY (`CountryID`)
+    REFERENCES `ylc`.`countries` (`CountryID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Customers_StateID`
+    FOREIGN KEY (`StateID`)
+    REFERENCES `ylc`.`states` (`StateID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Customers_User`
+    FOREIGN KEY (`CustomerID`)
+    REFERENCES `ylc`.`users` (`CustomerID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`facility_locations`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`facility_locations` (
+  `FacilityID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `FacilityName` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `RateCenterID` INT(11) NULL DEFAULT NULL COMMENT '',
+  `phone` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `inmates` FLOAT NULL DEFAULT NULL COMMENT '',  
+  `address` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `citystatezip` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `f7` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `timezone` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`FacilityID`)  COMMENT '',
+  CONSTRAINT `FK_facility_location_RateCenterID`
+    FOREIGN KEY (`RateCenterID`)
+    REFERENCES `ylc`.`rate_centers` (`RateCenterID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`inmate_status`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`inmate_status` (
+  `InmateStatusID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `InmateStatusName` VARCHAR(55) NOT NULL COMMENT '',
+  `InmateStatusDescription` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`InmateStatusID`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`inmates`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`inmates` (
+  `InmateID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `InmateCode` VARCHAR(255) NOT NULL COMMENT '',
+  `InmateStatusID` INT(11) NOT NULL COMMENT '',
+  `FacilityID` INT(11) NOT NULL COMMENT '',
+  `BOPNumber` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
+  `InmateFirstName` VARCHAR(255) NOT NULL COMMENT '',
+  `InmateLastName` VARCHAR(255) NOT NULL COMMENT '',
+  `ReferralCode` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
+  `PrePaidAmount` DECIMAL(5,2) NULL DEFAULT NULL COMMENT '',
+  `AllowedCallLines` INT(11) NOT NULL COMMENT '',
+  `Active` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `MaxAmtLimit` DECIMAL(5,2) NULL DEFAULT NULL COMMENT '',
+  `ChargePerLine` DECIMAL(5,2) NULL DEFAULT NULL COMMENT '',
+  `IsCreditAllowed` BIT(1) NULL DEFAULT b'0' COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`InmateID`)  COMMENT '',
+  INDEX `Inmate_Status_ID_idx` (`InmateStatusID` ASC)  COMMENT '',
+  INDEX `FK_Inmate_FacilityID_idx` (`FacilityID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Inmate_FacilityID`
+    FOREIGN KEY (`FacilityID`)
+    REFERENCES `ylc`.`facility_locations` (`FacilityID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Inmate_InmateStatusID`
+    FOREIGN KEY (`InmateStatusID`)
+    REFERENCES `ylc`.`inmate_status` (`InmateStatusID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`linetypes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`linetypes` (
+  `LineTypeID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `LineTypeName` VARCHAR(255) NOT NULL COMMENT '',
+  PRIMARY KEY (`LineTypeID`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`customer_lines`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`customer_lines` (
+  `CustomerLineID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `CustomerID` INT(11) NOT NULL COMMENT '',
+  `InmateID` INT(11) NOT NULL COMMENT '',
+  `InmateLocationID` INT(11) NULL DEFAULT NULL COMMENT '',
+  `LineTypeID` INT(11) NOT NULL  COMMENT '',
+  `LocalLineNumber` VARCHAR(255) NOT NULL COMMENT '',
+  `DestinationLineNumber` VARCHAR(255) NOT NULL COMMENT '',
+  `PrepaidMinutes` INT(11) NULL DEFAULT NULL COMMENT '',
+  `IsInitiatedByInmate` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `IsPaidByQuickPay` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `StartDate` DATETIME NULL DEFAULT NULL COMMENT '',
+  `EndDate` DATETIME NULL DEFAULT NULL COMMENT '',
+  `Active` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`CustomerLineID`)  COMMENT '',
+  INDEX `FK_CustomerID_idx` (`CustomerID` ASC)  COMMENT '',
+  INDEX `FK_Inmate_idx` (`InmateID` ASC)  COMMENT '',
+  INDEX `FK_LineTypeID_idx` (`LineTypeID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Customer_Lines_CustomerID`
+    FOREIGN KEY (`CustomerID`)
+    REFERENCES `ylc`.`users` (`CustomerID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Customer_Lines_Inmate`
+    FOREIGN KEY (`InmateID`)
+    REFERENCES `ylc`.`inmates` (`InmateID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Customer_Lines_LineTypeID`
+    FOREIGN KEY (`LineTypeID`)
+    REFERENCES `ylc`.`linetypes` (`LineTypeID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`payment_card_types`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`payment_card_types` (
+  `PaymentCardTypeID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `PaymentCardName` VARCHAR(45) NOT NULL COMMENT '',
+  `Active` BIT(1) NULL DEFAULT b'1' COMMENT '',
+  PRIMARY KEY (`PaymentCardTypeID`)  COMMENT '',
+  UNIQUE INDEX `PaymentCardName_UNIQUE` (`PaymentCardName` ASC)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`prepaid_pricing`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`prepaid_pricing` (
+  `PrepaidPricingID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `NameOfBlock` VARCHAR(50) NULL DEFAULT NULL COMMENT '',
+  `NoOfMinutes` INT(11) NULL DEFAULT NULL COMMENT '',
+  `Description` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `BlockPrice` DECIMAL(10,2) NULL DEFAULT NULL COMMENT '',
+  `Active` BIT(1) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` DATETIME NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`PrepaidPricingID`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`customer_line_payment_details`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`customer_line_payment_details` (
+  `LinePaymentDetailID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `CustomerLineID` INT(11) NOT NULL COMMENT '',
+  `PrepaidPricingId` INT(11) NOT NULL COMMENT '',
+  `PaidFor` VARCHAR(55) NOT NULL COMMENT '',
+  `PaymentType` VARCHAR(55) NOT NULL COMMENT '',
+  `PaymentAmount` DECIMAL(10,0) NULL DEFAULT NULL COMMENT '',
+  `PaymentCardTypeID` INT(11) NOT NULL COMMENT '',
+  `NameOnCard` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `Last4DigitsOfCard` VARCHAR(4) NULL DEFAULT NULL COMMENT '',
+  `PaymentConformationCode` VARCHAR(55) NULL DEFAULT NULL COMMENT '',
+  `PaymentDate` DATETIME NOT NULL COMMENT '',
+  `NumberOfMinutes` INT(11) NULL DEFAULT NULL COMMENT '',
+  `IsPaidByQuickPay` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `IsInitiatedByInmate` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `IsRecurringPayemnt` BIT(1) NULL DEFAULT NULL COMMENT '',
+  `IsInvoiceGenerated` TINYINT(1) NULL DEFAULT NULL COMMENT '',
+  `InvoiceGeneratedDate` DATETIME NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`LinePaymentDetailID`)  COMMENT '',
+  INDEX `FK_CustomerLineID_idx` (`CustomerLineID` ASC)  COMMENT '',  
+  INDEX `FK_PaymentCardTypeID_idx` (`PaymentCardTypeID` ASC)  COMMENT '',
+  INDEX `FK_Customer_Line_Payment_Details_PrepaidPriceID_idx` (`PrepaidPricingId` ASC)  COMMENT '',
+  CONSTRAINT `FK_Customer_Line_Payment_Details_CustomerLineID`
+    FOREIGN KEY (`CustomerLineID`)
+    REFERENCES `ylc`.`customer_lines` (`CustomerLineID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION, 
+  CONSTRAINT `FK_Customer_Line_Payment_Details_PaymentCardTypeID`
+    FOREIGN KEY (`PaymentCardTypeID`)
+    REFERENCES `ylc`.`payment_card_types` (`PaymentCardTypeID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Customer_Line_Payment_Details_PrepaidPriceID`
+    FOREIGN KEY (`PrepaidPricingId`)
+    REFERENCES `ylc`.`prepaid_pricing` (`PrepaidPricingID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`call_log`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`call_log` (
+  `LineCallLogID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '', 
+  `LinePaymentDetailID` INT(11) NOT NULL COMMENT '',
+  `LocalLineNumber` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `DestinationLineNumber` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `CallStartDateTime` DATETIME NULL DEFAULT NULL COMMENT '',
+  `CallEndDateTime` DATETIME NULL DEFAULT NULL COMMENT '',
+  `CallDuration` VARCHAR(55) NULL DEFAULT NULL COMMENT '',
+  `MinutesLeft` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`LineCallLogID`)  COMMENT '', 
+  INDEX `FK_LinePaymentDetailID_idx` (`LinePaymentDetailID` ASC)  COMMENT '', 
+  CONSTRAINT `FK_Call_Log_LinePaymentDetailID`
+    FOREIGN KEY (`LinePaymentDetailID`)
+    REFERENCES `ylc`.`customer_line_payment_details` (`LinePaymentDetailID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`facility_numberpool`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`facility_numberpool` (
+  `FacilityNumberPoolID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `FacilityID` INT(11) NOT NULL COMMENT '',  
+  `PNumber` VARCHAR(11) NULL DEFAULT NULL COMMENT '', 
+  `Status` BIT(1) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`FacilityNumberPoolID`)  COMMENT '',
+  INDEX `FK_FacilityNumberPool_FacilityID_idx` (`FacilityID` ASC)  COMMENT '',
+  CONSTRAINT `FK_FacilityNumberPool_FacilityID`
+    FOREIGN KEY (`FacilityID`)
+    REFERENCES `ylc`.`facility_locations` (`FacilityID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`inmate_notes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`inmate_notes` (
+  `InmateNaotesID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `InmateNotes` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
+  `InmateID` INT(11) NOT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` DATETIME NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`InmateNaotesID`)  COMMENT '',
+  INDEX `FK_InmateID_idx` (`InmateID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Inmate_Notes_InmateID`
+    FOREIGN KEY (`InmateID`)
+    REFERENCES `ylc`.`inmates` (`InmateID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`inmate_referrals`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`inmate_referrals` (
+  `InmateReferralID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `InmateID` INT(11) NOT NULL COMMENT '',
+  `ReferredByID` INT(11) NOT NULL COMMENT '',
+  PRIMARY KEY (`InmateReferralID`)  COMMENT '',
+  INDEX `InmateID_idx` (`InmateID` ASC)  COMMENT '',
+  INDEX `ReferredByID_idx` (`ReferredByID` ASC)  COMMENT '',
+  CONSTRAINT `FK_Inmate_Referrals_InmateID`
+    FOREIGN KEY (`InmateID`)
+    REFERENCES `ylc`.`inmates` (`InmateID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `FK_Inmate_Referrals_ReferredByID`
+    FOREIGN KEY (`ReferredByID`)
+    REFERENCES `ylc`.`inmates` (`InmateID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `ylc`.`rate_centers`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `ylc`.`rate_centers` (
+  `RateCenterID` INT(11) NOT NULL AUTO_INCREMENT COMMENT '',
+  `RateCenterName` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+   `LocalExchanges` VARCHAR(255) NULL DEFAULT NULL COMMENT '',
+  `Npanxx` INT(11) NULL DEFAULT NULL COMMENT '',
+  `Effective` DATETIME NULL DEFAULT NULL COMMENT '',
+  `Lata` INT(11) NULL DEFAULT NULL COMMENT '',
+  `Ocn` VARCHAR(45) NULL DEFAULT NULL COMMENT '',
+  `CreatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `CreatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  `UpdatedBy` INT(11) NULL DEFAULT NULL COMMENT '',
+  `UpdatedDate` TIMESTAMP NULL DEFAULT NULL COMMENT '',
+  PRIMARY KEY (`RateCenterID`)  COMMENT '')
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

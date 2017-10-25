@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.FacilityNumberPool" table="facility_numberpool">
+        <id name="facilityNumberPoolID" type="java.lang.Integer">
+            <column name="FacilityNumberPoolID" length="11" />
+            <generator class="native"/>
+        </id>         
+          <property name="pNumber" type="string">
+            <column name="PNumber" length="11"/>
+        </property>
+          <property name="status" type="java.lang.Byte">
+            <column name="Status" length="1"/>
+        </property>
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>        
+         <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>     
+         <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>        
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>   
+  <many-to-one name="facilityLocation" class="com.ylc.domain.FacilityLocation" fetch="select">
+            <column name="FacilityID" not-null="true" />
+        </many-to-one>                            
+    </class>
+</hibernate-mapping>

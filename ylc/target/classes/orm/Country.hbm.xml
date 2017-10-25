@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.Country" table="countries">
+        <id name="countryID" type="java.lang.Integer">
+            <column name="CountryID" length="11" />
+            <generator class="native"/>
+        </id>     
+        <property name="countryName" type="string">
+            <column name="CountryName" length="100" not-null="true" />
+        </property>
+          <property name="countryAbbr" type="string">
+            <column name="CountryAbbr" length="2" not-null="true" />
+        </property>   
+          <property name="countryCode" type="java.lang.Integer">
+            <column name="CountryCode" length="4" not-null="true" />
+        </property>     
+    </class>
+</hibernate-mapping>

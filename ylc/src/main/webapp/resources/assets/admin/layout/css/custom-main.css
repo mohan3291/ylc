@@ -1,0 +1,33 @@
+body{background-color: white}
+
+img.logo-default {width: 59px;}
+
+.page-header.navbar{ background-color: #fff; border-bottom: 1px solid #ccc;}
+.page-header.navbar .hor-menu {float: right}
+.page-header.navbar .hor-menu .navbar-nav > li.active > a, .page-header.navbar .hor-menu .navbar-nav > li.active > a, .page-header.navbar .hor-menu .navbar-nav > li.current > a, .page-header.navbar .hor-menu .navbar-nav > li.current > a, .page-header.navbar .hor-menu .navbar-nav > li.open > a { color:#fff; background-color: #6a80bd !important;}
+
+.page-header.navbar .hor-menu .navbar-nav > li > a:hover {background-color: #98ce5a !important;}
+
+.page-header.navbar .hor-menu .navbar-nav > li > a {color:#666}
+
+.page-header.navbar .hor-menu .navbar-nav > li.active .selected, .page-header.navbar .hor-menu .navbar-nav > li.current .selected { border-top: 6px solid #6a80bd ;}
+
+.portlet.box.blue-hoki > .portlet-title {background-color: #6a80bd;}
+.portlet.box.blue-hoki > .portlet-title > .caption > i, .portlet.box.blue-hoki > .portlet-title > .caption {color: #fff; }
+.portlet.box.blue-hoki {  border: 1px solid #6a80bd;}
+
+.form-wizard .steps > li.active > a.step .number, .progress > .progress-bar-success{background-color: #98ce5a;}
+
+
+.form-wizard .steps > li > a.step > .number {font-size: 16px;font-weight: 300; padding: 2px 8px 11px 9px;margin-right: 5px;height: 25px; width: 26px;}
+
+.form-wizard .steps > li.active > a.step .desc{color: #98ce5a;}
+
+.blue.btn:hover, .blue.btn:focus, .blue.btn:active, .blue.btn.active, .blue.btn {background-color: #6a80bd;}
+.blue.btn:hover {background-color: #98ce5a;}
+.form-wizard .steps > li.done > a.step .number{background-color: #6a80bd;}
+.form-wizard .steps > li.done > a.step .desc{color: #6a80bd;}
+.table>thead>tr>th {border: 0px;}
+.form-horizontal .md-radio-inline {margin-left: 30px;}
+
+.form-wizard .steps > li > a.step > .desc { color: #6a80bd;display: block;}

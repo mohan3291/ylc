@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.CustomerPaymentDetail" table="customer_payment_details" catalog="ylc">
+        <id name="linePaymentDetailID" type="java.lang.Integer">
+            <column name="LinePaymentDetailID" length="11" />
+            <generator class="native"/>
+        </id>          
+         <property name="paidFor" type="string">
+            <column name="PaidFor" length="55" not-null="true" />
+        </property>        
+         <property name="paymentType" type="string">
+            <column name="PaymentType" length="55" not-null="true" />
+        </property>        
+         <property name="paymentAmount" type="big_decimal">
+             <column name="PaymentAmount" precision="10" scale="0"/>
+        </property>             
+         <property name="nameOnCard" type="string">
+            <column name="NameOnCard" length="255"/>
+        </property>        
+         <property name="last4DigitsOfCard" type="string">
+            <column name="Last4DigitsOfCard" length="4"/>
+        </property>        
+         <property name="paymentConformationCode" type="string">
+            <column name="PaymentConformationCode" length="55"/>
+        </property>
+        
+         <property name="paymentDate" type="timestamp">
+            <column name="PaymentDate" length="11"/>
+        </property>        
+         <property name="numberOfMinutes" type="java.lang.Integer">
+            <column name="NumberOfMinutes" length="11"/>
+        </property>        
+         <property name="isPaidByQuickPay" type="java.lang.Byte">
+            <column name="IsPaidByQuickPay" length="1"/>
+        </property>
+        
+         <property name="IsInitiatedByInmate" type="java.lang.Byte">
+            <column name="IsInitiatedByInmate" length="1"/>
+        </property>        
+         <property name="isRecurringPayemnt" type="java.lang.Byte">
+            <column name="IsRecurringPayemnt" length="1"/>
+        </property>     
+         <property name="isInvoiceGenerated" type="java.lang.Byte">
+            <column name="IsInvoiceGenerated" length="1"/>
+        </property>        
+         <property name="invoiceGeneratedDate" type="timestamp">
+            <column name="InvoiceGeneratedDate" length="19"/>
+        </property>     
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>        
+         <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>     
+         <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>        
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>              
+        <many-to-one name="user" class="com.ylc.domain.User" fetch="select">
+            <column name="CustomerID" not-null="true" />
+        </many-to-one>     
+         <many-to-one name="paymentCardType" class="com.ylc.domain.PaymentCardType" fetch="select">
+            <column name="PaymentCardTypeID" not-null="true" />
+        </many-to-one> 
+         <many-to-one name="prepaidPricing" class="com.ylc.domain.PrepaidPricing" fetch="select">
+            <column name="PrepaidPricingID" not-null="true" />
+        </many-to-one>                          
+    </class>
+</hibernate-mapping>

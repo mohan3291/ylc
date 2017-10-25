@@ -1,0 +1,539 @@
+<div class="page-content-wrapper">
+	<div class="page-content">
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="portlet box blue" id="form_wizard_1">
+					<div class="portlet-title">
+						<div class="caption">Pay to inmate</div>
+
+					</div>
+					<div class="portlet-body form">
+						<form action="#" class="form-horizontal" id="submit_form"
+							method="POST">
+							<div class="form-wizard">
+								<div class="form-body">
+									<ul class="nav nav-pills nav-justified steps myMenuList">
+										<li><a href="#tab1" data-toggle="tab" class="step"> <span
+												class="number"> 1 </span> <span class="desc"> Search
+													for Inmate</span>
+										</a></li>
+										<li><a href="#tab2" data-toggle="tab" class="step"> <span
+												class="number"> 2 </span> <span class="desc"> Select
+													Inmate </span>
+										</a></li>
+										<li><a href="#tab3" data-toggle="tab" class="step active">
+												<span class="number"> 3 </span> <span class="desc">
+													Select Amount </span>
+										</a></li>
+										<li><a href="#tab4" data-toggle="tab" class="step"> <span
+												class="number"> 4 </span> <span class="desc"> <i
+													class="fa fa-check"></i> Make Payment
+											</span>
+										</a></li>
+										<li><a href="#tab5" data-toggle="tab" class="step"> <span
+												class="number"> 5 </span> <span class="desc"> <i
+													class="fa fa-check"></i> Confirm Payment
+											</span>
+										</a></li>
+									</ul>
+									<div id="bar" class="progress progress-striped"
+										role="progressbar">
+										<div class="progress-bar progress-bar-success"></div>
+									</div>
+									<div class="tab-content">
+										<div class="alert alert-danger display-none">
+											<button class="close" data-dismiss="alert"></button>
+											You have some form errors. Please check below.
+										</div>
+										<div class="alert alert-success display-none">
+											<button class="close" data-dismiss="alert"></button>
+											Your form validation is successful!
+										</div>
+
+
+
+
+
+										<div class="tab-pane active" id="tab1" ng-show="showtab1">
+											<div class="form-group">
+												<label class="control-label col-md-3">First Name <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="firstname"
+														ng-model="paymentDetails.fname" required min="2" /> <span
+														class="help-block"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Last Name <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="lastname"
+														ng-model="paymentDetails.lname" required min="2" /> <span
+														class="help-block"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">BOP Number <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="bopnumber"
+														ng-model="paymentDetails.bop" required min="2" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+
+
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<!--  <a href="#tab2" class="btn blue">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+											</a>  -->
+														<a href="/quickpay/#tab2" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-disabled="(!paymentDetails.fname || !paymentDetails.lname) && !paymentDetails.bop"
+																ng-click="continuePayTab1(paymentDetails)">Continue</button>
+
+														</a> </a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="" id="tab11" ng-show="showtab11">
+											<div class="alert alert-danger">
+												<button class="close" data-dismiss="alert"></button>
+												Inmate not found. Enter inmate information to add inmate or call 855-952-5060 for customer support.
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">First Name <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="firstname"
+														ng-model="paymentDetails.fname" required min="2" /> <span
+														class="help-block"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Last Name <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="lastname"
+														ng-model="paymentDetails.lname" required min="2" /> <span
+														class="help-block"></span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">BOP Number <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="bopnumber"
+														ng-model="paymentDetails.bop" required min="2" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Select
+													Facility <span class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<select class="form-control select2me" name="location"
+														ng-change="selectFac(facilityLocation)"
+														ng-model="facilityLocation"
+														ng-options="facilityLoc.facilityName for facilityLoc in facilityLocs">
+
+													</select>
+												</div>
+											</div>
+
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<!--  <a href="#tab2" class="btn blue">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+											</a>  -->
+														<a href="/quickpay/#tab2" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-click="continuePayTab1(paymentDetails)">Search</button>
+
+														</a> <a href="/quickpay/#tab2" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-disabled="!paymentDetails.fname || !paymentDetails.lname || !paymentDetails.bop || !paymentDetails.inmateFacility"
+																ng-click="addInmate(paymentDetails)">Add Inmate</button>
+
+														</a> </a>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="tab-pane" id="tab2" ng-show="showtab2">
+											<!-- <div ng-controller="quickpayGridCtrl">
+										      <div id="grid1" ui-grid="gridOptions" class="grid"></div>
+										      <div ui-grid="gridOptions" ui-grid-selection class="grid"></div>
+										    </div> -->
+
+											<div class="table-scrollable">
+												<table
+													class="table table-striped table-bordered table-advance table-hover">
+													<thead>
+														<tr>
+
+															<th>Action</th>
+															<th>First name</th>
+															<th>Last name</th>
+															<th>BOP Number</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr ng-repeat="inmate in inmatesList">
+															<td>
+
+
+																<div class="checkbox-list">
+																	<label class="radio-inline"><span
+																		class="required"> * </span> <input type="radio"
+																		value={{inmate.bopNumber}}
+																		data-title="Select inmates."
+																		ng-click="checkInMates($event)" /> </label>
+
+																</div>
+
+
+															</td>
+															<td>{{inmate.inmateFirstName}}</td>
+															<td>{{inmate.inmateLastName}}</td>
+															<td>{{inmate.bopNumber}}</td>
+														</tr>
+
+													</tbody>
+												</table>
+											</div>
+											<div>
+												<div class="form-actions">
+													<div class="row">
+														<div class="col-md-offset-3 col-md-9">
+															<!--  <a href="#tab2" class="btn blue">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+											</a>  -->
+															<a href="/quickpay/#tab1" data-toggle="tab" class="step">
+																<button type="button"
+																	class="btn blue uppercase pull-center"
+																	ng-click="backTab2()">back</button>
+															</a> <a href="/quickpay/#tab3" data-toggle="tab" class="step">
+																<button type="button"
+																	class="btn blue uppercase pull-center "
+																	ng-click="continuePayTab2(selectBox)">Continue</button>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+
+										<div class="tab-pane" id="tab3" ng-show="showtab3">
+											<div class="alert alert-danger" ng-show="errortab3">
+												<button class="close" data-dismiss="alert"></button>
+												Please provide the Amount......
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Total Amount<span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" placeholder="$20"
+														name="amount" id="amount" ng-model="paymentDetails.amount"
+														ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<a href="/quickpay/#tab2" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-click="backTab3()">back</button>
+														</a> <a href="/quickpay/#tab4" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-disabled="!paymentDetails.amount"
+																ng-click="continuePayTab3(paymentDetails)">Continue</button>
+														</a>
+													</div>
+												</div>
+											</div>
+
+
+										</div>
+
+
+
+										<div class="tab-pane" id="tab4" ng-show="showtab4">
+											<h3 class="block">Provide your billing details</h3>
+											
+											
+											
+											
+											<div class="form-group">
+												<label class="control-label col-md-3">Billing
+													Address<span class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control"
+														name="Billingaddress" ng-model="paymentDetails.address" />
+													<span class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">City<span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="city"
+														ng-model="paymentDetails.city" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">State <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<!-- <input type="text" placeholder="" class="form-control"
+														name="state" ng-model="paymentDetails.state" /> <span
+														class="help-block"> </span> -->
+													<select class="form-control select2me" name="state"
+														ng-model="aState"
+														ng-options="state.stateName for state in stateList"
+														ng-change="selectState(aState)"></select>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Country<span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<select class="form-control select2me" name="country"
+														ng-model="acountry"
+														ng-options="country.countryName for country in countryList"
+														ng-change="selectCountry(acountry)"></select>
+
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Zip Code<span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" placeholder="" class="form-control"
+														name="zipcode" ng-model="paymentDetails.zip" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Phone Number<span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" placeholder="" class="form-control"
+														name="phone" ng-model="paymentDetails.phone" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+
+											<hr>
+											<h3>Provide your credit card details</h3>
+												<div class="" id="paymentProfile" ng-show="paymentProfile">
+																							<div class="table-scrollable">
+																								<table class="table table-striped table-bordered table-advance table-hover">
+																									<tbody>
+																										<tr>
+																											<td>
+																												<div class="checkbox-list">
+																													<label class="radio-inline"><span
+																														class="required"> * </span> <input type="radio"
+																														value={{paymentProfileDetails.paymentProfileID}}
+																														data-title="Select Credit Option"
+																														ng-click="checkCreditCard($event)" /> {{paymentProfileDetails.cardNumber}}</label>
+												
+																												</div>
+												
+												
+																											</td>
+																										</tr>
+												
+																									</tbody>
+																								</table>
+																							</div>
+																							</div>
+
+
+											<div class="form-group">
+												<label class="control-label col-md-3">Card Holder
+													Name <span class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="card_name"
+														ng-model="paymentDetails.cardHolderName" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Card Number <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" class="form-control" name="card_number"
+														ng-model="paymentDetails.cardNumber" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">CVC <span
+													class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" placeholder="" class="form-control"
+														name="card_cvc" ng-model="paymentDetails.cvc" /> <span
+														class="help-block"> </span>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Expiration(MM/YYYY)
+													<span class="required"> * </span>
+												</label>
+												<div class="col-md-4">
+													<input type="text" placeholder="MM/YYYY" maxlength="7"
+														class="form-control" name="card_expiry_date"
+														ng-model="paymentDetails.expiration" /> <span
+														class="help-block"> e.g 11/2020 </span>
+												</div>
+											</div>
+
+											<div class="form-group"></div>
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<!--  <a href="#tab2" class="btn blue">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+											</a>  -->
+														<a href="/quickpay/#tab3" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-click="backTab4()">back</button>
+														</a> <a href="/quickpay/#tab5" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																
+																ng-click="continuePayTab4(paymentDetails)">Continue</button>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+	<!-- ng-disabled="!paymentDetails.address || !paymentDetails.city || !paymentDetails.state || !paymentDetails.country ||
+																!paymentDetails.zip || !paymentDetails.phone || !paymentDetails.cardHolderName || !paymentDetails.cardNumber ||
+																!paymentDetails.cvc || !paymentDetails.expiration" -->
+	
+										<div class="tab-pane" id="tab5" ng-show="showtab5">
+											<h3 class="block">Confirm your order</h3>
+											<h4 class="form-section">Account</h4>
+											<div class="form-group">
+												<label class="control-label col-md-3">Inmate Name:</label>
+												<div class="col-md-4">
+													<p class="form-control-static" data-display="username">{{inmateFullName}}</p>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Inmate BOP Code:</label>
+												<div class="col-md-4">
+													<p class="form-control-static" data-display="username">{{paymentDetails.bop}}</p>
+												</div>
+											</div>
+											<div class="form-group">
+												<label class="control-label col-md-3">Amount</label>
+												<div class="col-md-4">
+													<p class="form-control-static" data-display="email">$
+														{{paymentDetails.amount}}</p>
+												</div>
+											</div>
+
+
+											<!-- 	<div class="form-group">
+												<label class="control-label col-md-3">Payment
+													Options:</label>
+												<div class="col-md-4">
+													<p class="form-control-static" data-display="payment[]">
+													</p>
+												</div>
+											</div> -->
+											<div class="form-actions">
+												<div class="row">
+													<div class="col-md-offset-3 col-md-9">
+														<!--  <a href="#tab3" class="btn blue">
+												Continue <i class="m-icon-swapright m-icon-white"></i>
+											</a>  -->
+														<a href="/quickpay/#tab4" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-click="backTab5()">back</button>
+														</a> <a href="/quickpay/#tab4" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center"
+																ng-click="savePayment(paymentDetails)">Pay</button>
+														</a>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="" id="tab6" ng-show="showCompleteTab">
+											<h3 class="block">Payment Confirmation</h3>
+											<table class="table">
+												<thead>
+													<tr>
+														<th colspan="2">Transaction Completed Successfully</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td colspan="2">{{orderConfMessgae}}</td>
+													</tr>
+											</table>
+											<a href="#/dashboard" data-toggle="tab" class="step">
+															<button type="button"
+																class="btn blue uppercase pull-center">Home</button>
+														</a>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+

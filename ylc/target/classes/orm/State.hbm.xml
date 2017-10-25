@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.State" table="states">
+        <id name="stateID" type="java.lang.Integer">
+            <column name="StateID" length="11" />
+            <generator class="native"/>
+        </id>     
+        <property name="stateName" type="string">
+            <column name="StateName" length="255" not-null="true" />
+        </property>
+          <property name="stateAbbr" type="string">
+            <column name="StateAbbr" length="2" not-null="true" />
+        </property>        
+    </class>
+</hibernate-mapping>

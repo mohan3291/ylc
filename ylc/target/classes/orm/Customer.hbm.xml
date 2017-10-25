@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.Customer" table="customers">
+        <id name="customerID" type="java.lang.Integer">
+            <column name="CustomerID" length="11" />
+            <generator class="foreign">
+				<param name="property">user</param>
+			</generator>
+        </id>    
+         <property name="firstName" type="string">
+            <column name="FirstName" length="255"/>
+        </property>  
+          <property name="middleName" type="string">
+            <column name="MiddleName" length="255"/>
+        </property>
+          <property name="lastName" type="string">
+            <column name="LastName" length="255"/>
+        </property>
+          <property name="mobileNumber" type="string">
+            <column name="MobileNumber" length="11"/>
+        </property>
+          <property name="address1" type="string">
+            <column name="Address1" length="255"/>
+        </property>  
+          <property name="address2" type="string">
+            <column name="Address2" length="255"/>
+        </property>
+          <property name="city" type="string">
+            <column name="City" length="255"/>
+        </property>
+          <property name="zipCode" type="string">
+            <column name="ZipCode" length="11"/>
+        </property>
+          <property name="active" type="java.lang.Byte">
+            <column name="Active" length="1"/>
+        </property> 
+         <property name="paymentGatewayId" type="string">
+            <column name="PaymentGatewayId" length="255"/>
+        </property>     
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>
+          <property name="createdDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>
+          <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property> 
+           <property name="recurringPayment" type="java.lang.Byte">
+            <column name="RecurringPayment" length="1"/>
+        </property>
+           <property name="prePaidAmount" type="big_decimal">
+             <column name="PrePaidAmount" precision="10" scale="2"/>
+        </property> 
+          <property name="recurringPaymentDate" type="string">
+            <column name="RecurringPaymentDate" length="45"/>
+        </property>  
+         <property name="recurringPaymentAmount" type="big_decimal">
+            <column name="RecurringPaymentAmount" precision="10" scale="2"/>
+        </property>    
+        
+         <one-to-one name="user" class="com.ylc.domain.User" constrained="true"></one-to-one>          
+        <many-to-one name="country" class="com.ylc.domain.Country" fetch="select">
+            <column name="countryID" not-null="true" />
+        </many-to-one> 
+        <many-to-one name="state" class="com.ylc.domain.State" fetch="select">
+            <column name="stateID" not-null="true" />
+        </many-to-one>                   
+    </class>
+</hibernate-mapping>

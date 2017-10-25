@@ -1,0 +1,17 @@
+<div class="alert alert-error" ng-show="error">{{errorMessage}}</div>
+<h3>InMate List</h3>
+<div class="alert alert-info" ng-show="inmates.length == 0">No Railway Stations found</div>
+<table class="table table-bordered table-striped" ng-show="inmates.length > 0">
+	<thead>
+		<tr>		
+ 			<th style="text-align: center;">First Name</th>
+			<th style="text-align: center;">Last Name</th>			
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in inmates">			
+			<td>{{item.firstName}}</td>
+			<td>{{item.lastName}}</td>			
+		</tr>
+	</tbody>
+</table>

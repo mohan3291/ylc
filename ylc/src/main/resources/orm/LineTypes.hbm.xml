@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.LineType" table="linetypes">
+        <id name="lineTypeID" type="java.lang.Integer">
+            <column name="LineTypeID" length="11" />
+            <generator class="native"/>
+        </id>     
+        <property name="lineTypeName" type="string">
+            <column name="LineTypeName" length="255" not-null="true" />
+        </property>                
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" ng-app="AngularSpringApp">
+<head>
+<title>Profile Page | www.beingjavaguys.com</title>
+   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta content="" name="description"/>
+	<meta content="" name="author"/>
+    <title>Service App</title>
+    <link rel="stylesheet" href="resources/css/app.css"/>
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+	<!-- END GLOBAL MANDATORY STYLES -->
+	<!-- BEGIN PAGE LEVEL PLUGIN STYLES -->
+	<link href="resources/assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css"/>
+	<!-- END PAGE LEVEL PLUGIN STYLES -->
+	<!-- BEGIN PAGE STYLES -->
+	<link href="resources/assets/admin/pages/css/tasks.css" rel="stylesheet" type="text/css"/>
+	<!-- END PAGE STYLES -->
+	<!-- BEGIN THEME STYLES -->
+	<link href="resources/assets/global/css/components.css" id="style_components" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/admin/layout/css/layout.css" rel="stylesheet" type="text/css"/>
+	<link id="style_color" href="resources/assets/admin/layout/css/themes/darkblue.css" rel="stylesheet" type="text/css"/>
+	<link href="resources/assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css"/>
+	<!-- END THEME STYLES -->
+	<link rel="shortcut icon" href="favicon.ico"/>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                 $(".hidev").hide(); 
+                
+                $("#login").click(function(){
+                    $(".hidev").show(); 
+                });
+                
+                $("#guest").click(function(){
+                    $(".hidev").hide();					
+                });
+                 
+                
+                
+            });
+        </script>
+</head>
+<body class="page-header-fixed page-quick-sidebar-over-content ">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top">
+	<!-- BEGIN HEADER INNER -->
+	<div class="page-header-inner">
+		<!-- BEGIN LOGO -->
+		<div class="page-logo">
+			<a href="index.html">
+			<img src="resources/assets/admin/layout/img/ylc-logo.png" alt="logo" class="logo-default"/>
+			</a>
+			<div class="menu-toggler sidebar-toggler hide">
+				<!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+			</div>
+		</div>
+		<!-- END LOGO -->
+		<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+		<a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+		</a>
+		<!-- END RESPONSIVE MENU TOGGLER -->
+		<!-- BEGIN TOP NAVIGATION MENU -->
+		<div class="top-menu">
+			<ul class="nav navbar-nav pull-right">
+				<!-- BEGIN NOTIFICATION DROPDOWN -->
+				
+				
+				<!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+				<li class="dropdown dropdown-user">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+					<img alt="" class="img-circle" src="resources/assets/admin/layout/img/avatar3_small.jpg"/>
+					<span class="username username-hide-on-mobile">
+					Nick </span>
+					<i class="fa fa-angle-down"></i>
+					</a>
+					<ul class="dropdown-menu dropdown-menu-default">
+						<li>
+							<a href="login.html">
+							<i class="fa fa-question"></i> Support </a>
+						</li><li>
+							<a href="login.html">
+							<i class="icon-key"></i> Change Password </a>
+						</li>
+						<li>
+							<a href="login.html">
+							<i class="fa fa-sign-out"></i> Log Out </a>
+						</li>
+					</ul>
+				</li>
+				<!-- END USER LOGIN DROPDOWN -->
+				
+			</ul>
+		</div>
+		<!-- END TOP NAVIGATION MENU -->
+	</div>
+	<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN SIDEBAR -->
+	<div class="page-sidebar-wrapper">
+		<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+		<!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+		<div class="page-sidebar navbar-collapse collapse">
+			<!-- BEGIN SIDEBAR MENU -->
+			<!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+			<!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+			<!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+			<!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+			<!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+			<!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+			<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+				<!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+				<li class="sidebar-toggler-wrapper">
+					<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+					<div class="sidebar-toggler">
+					</div>
+					<!-- END SIDEBAR TOGGLER BUTTON -->
+				</li>
+				<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+
+			   <li class="">
+					<a href="index.html">
+					<i class="icon-home"></i>
+					<span class="title">Dashboard</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+					
+				</li>
+			<li >
+					<a href="Account.html">
+					<i class="icon-basket"></i>
+					<span class="title">Account</span>
+                    <span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+					
+				</li>
+				<li class="start active open">
+					<a href="view-invoices.html">
+					<i class="icon-rocket"></i>
+					<span class="title">View Invoices</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+
+				</li>
+				<li>
+					<a href="Manage-Numbers.html">
+					<i class="icon-diamond"></i>
+					<span class="title">Manage Numbers</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+	
+				</li>
+				<li>
+					<a href="view-call-log.html">
+					<i class="icon-puzzle"></i>
+					<span class="title">View call log</span>
+					<span class="selected"></span>
+					<span class="arrow open"></span>
+					</a>
+				
+				</li>
+
+
+			</ul>
+			<!-- END SIDEBAR MENU -->
+		</div>
+	</div>
+	<!-- END SIDEBAR -->
+<!-- BEGIN CONTENT -->
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+			<div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+							<h4 class="modal-title">Modal title</h4>
+						</div>
+						<div class="modal-body">
+							 Widget settings form goes here
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn blue">Save changes</button>
+							<button type="button" class="btn default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal-dialog -->
+			</div>
+			<!-- /.modal -->
+			<!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+
+			<!-- BEGIN PAGE HEADER-->
+			<h3 class="page-title">
+			Member<small>- Quick Pay</small>
+			</h3>
+			
+			<!-- END PAGE HEADER-->
+		<!-- BEGIN PAGE CONTENT-->
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portlet box blue" id="form_wizard_1">
+						<div class="portlet-title">
+							<div class="caption">
+								 Pay for your inmate number
+							</div>
+							
+						</div>
+						<div class="portlet-body form">
+							<div class="form-wizard">
+								<div class="form-body">
+									<div id="wrapper">
+										<ul class="nav nav-pills nav-justified steps">
+											<li>
+												<a href="#tab1" data-toggle="tab" class="step">
+												<span class="number">
+												1 </span>
+												<span class="desc">
+												 Search for Inmate Number </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab2" data-toggle="tab" class="step">
+												<span class="number">
+												2 </span>
+												<span class="desc">
+												 Select a Inmate Number </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab3" data-toggle="tab" class="step active">
+												<span class="number">
+												3 </span>
+												<span class="desc">
+												 Select Block of Minutes </span>
+												</a>
+											</li>
+											<li>
+												<a href="#tab4" data-toggle="tab" class="step">
+												<span class="number">
+												4 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Make Payment </span>
+												</a>
+											</li>
+                                            <li>
+												<a href="#tab5" data-toggle="tab" class="step">
+												<span class="number">
+												5 </span>
+												<span class="desc">
+												<i class="fa fa-check"></i> Confirm Payment </span>
+												</a>
+											</li>
+										</ul>
+										<div id="bar" class="progress progress-striped" role="progressbar">
+											<div class="progress-bar progress-bar-success">
+											</div>
+										</div>
+									    <div ng-view></div>
+			
+									</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT-->
+		</div>
+	</div>
+
+<script src="resources/js/lib/angular/angular.js"></script>
+<script src="resources/js/app.js"></script>
+<script src="resources/js/services.js"></script>
+<script src="resources/js/controllers/RailwayStationController.js"></script>
+<script src="resources/js/controllers/PayController.js"></script>
+<script src="resources/js/controllers/TrainController.js"></script>
+<script src="resources/js/filters.js"></script>
+<script src="resources/js/directives.js"></script>		
+</body>
+</html>

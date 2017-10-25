@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.ylc.domain.CustomerLine" table="customer_lines">
+        <id name="customerLineID" type="java.lang.Integer">
+            <column name="CustomerLineID" length="11" />
+            <generator class="native"/>
+        </id>    
+        <property name="inmateLocationID" type="java.lang.Integer">
+            <column name="InmateLocationID" length="45"/>
+        </property>      
+         <property name="localLineNumber" type="string">
+            <column name="LocalLineNumber" length="255" not-null="true" />
+        </property>        
+         <property name="destinationLineNumber" type="string">
+            <column name="DestinationLineNumber" length="255" not-null="true" />
+        </property>        
+         <property name="prepaidMinutes" type="java.lang.Integer">
+            <column name="PrepaidMinutes" length="11"/>
+        </property>        
+         <property name="isInitiatedByInmate" type="java.lang.Byte">
+            <column name="IsInitiatedByInmate" length="1"/>
+        </property>        
+         <property name="isPaidByQuickPay" type="java.lang.Byte">
+            <column name="IsPaidByQuickPay" length="1"/>
+        </property>        
+         <property name="StartDate" type="timestamp">
+            <column name="StartDate" length="19"/>
+        </property>        
+         <property name="endDate" type="timestamp">
+            <column name="EndDate" length="11"/>
+        </property>
+        
+         <property name="active" type="java.lang.Byte">
+            <column name="Active" length="11"/>
+        </property>        
+         <property name="createdBy" type="java.lang.Integer">
+            <column name="CreatedBy" length="11"/>
+        </property>        
+         <property name="CreatedDate" type="timestamp">
+            <column name="CreatedDate" length="19"/>
+        </property>        
+         <property name="updatedBy" type="java.lang.Integer">
+            <column name="UpdatedBy" length="11"/>
+        </property>        
+         <property name="updatedDate" type="timestamp">
+            <column name="UpdatedDate" length="19"/>
+        </property>        
+        <many-to-one name="inMate" class="com.ylc.domain.InMate" fetch="select">
+            <column name="InmateID" not-null="true" />
+        </many-to-one> 
+        <many-to-one name="lineType" class="com.ylc.domain.LineType" fetch="select">
+            <column name="LineTypeID" not-null="true" />
+        </many-to-one> 
+        <many-to-one name="user" class="com.ylc.domain.User" fetch="select">
+            <column name="customerID" not-null="true" />
+        </many-to-one>  
+        <set name="customerLinePaymentDetails" table="customer_line_payment_details" 
+				cascade="save-update" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="CustomerLineID" not-null="true" />
+            </key>
+            <one-to-many class="com.ylc.domain.CustomerLinePaymentDetail" />
+        </set>                    
+    </class>
+</hibernate-mapping>

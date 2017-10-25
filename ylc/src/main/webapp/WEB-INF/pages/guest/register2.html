@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<script src="resources/js/lib/angular/angular.js"></script>
+<body>
+
+<h2>Register Here.</h2>
+
+<form ng-app="myApp" ng-controller="validateCtrl" 
+name="registerForm" novalidate method="post" action="saveUser">
+
+<p>User Name:<br>
+<input type="text" name="username"  ng-model="username" required>
+<span style="color:red" ng-show="registerForm.username.$dirty && registerForm.username.$invalid">
+<span ng-show="registerForm.username.$error.required">Username is required.</span>
+</span>
+</p>
+
+<p>Password:<br>
+<input type="password" name="password" ng-model="password" required>
+<span style="color:red" ng-show="registerForm.password.$dirty && registerForm.password.$invalid">
+<span ng-show="registerForm.password.$error.required">Password is required.</span>
+</span>
+</p>
+
+
+<p>Security Question:<br>
+<input type="text" name="securityQuestion" ng-model="securityQuestion" required>
+<span style="color:red" ng-show="registerForm.securityQuestion.$dirty && registerForm.securityQuestion.$invalid">
+<span ng-show="registerForm.securityQuestion.$error.required">Security Question is required.</span>
+</span>
+</p>
+
+
+<p>Answer:<br>
+<input type="text" name="answer" ng-model="answer" required>
+<span style="color:red" ng-show="registerForm.answer.$dirty && registerForm.answer.$invalid">
+<span ng-show="registerForm.answer.$error.required">Answer is required.</span>
+</span>
+</p>
+
+
+<p>Email:<br>
+<input type="email" name="email" ng-model="email" required>
+<span style="color:red" ng-show="registerForm.email.$dirty && registerForm.email.$invalid">
+<span ng-show="registerForm.email.$error.required">Email is required.</span>
+<span ng-show="registerForm.email.$error.email">Invalid email address.</span>
+</span>
+</p>
+
+<p>
+<input type="submit"
+ng-disabled="registerForm.username.$dirty && registerForm.username.$invalid ||  registerForm.userid.$dirty && registerForm.userid.$invalid || 
+registerForm.password.$dirty && registerForm.password.$invalid || registerForm.securityQuestion.$dirty && registerForm.securityQuestion.$invalid || 
+registerForm.answer.$dirty && registerForm.answer.$invalid || registerForm.email.$dirty && registerForm.email.$invalid  ">
+</p>
+</form>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+
+});
+</script>
+
+</body>
+</html>
